@@ -1,0 +1,17 @@
+<!-- LOGO -->
+{% include 'components/logo.html' %}
+
+<!-- BUTTON -->
+<button class="btn" type="button" data-modal-open>Open modal</button>
+
+<!-- FORM in section (add formId to form.js) -->
+{% set formId = section.id %} {% include 'components/formFields.njk' %}
+
+<!-- TIMER -->
+{% include 'components/timer.html' %}
+
+<!-- ACCORDION (uncomment style and js) -->
+{% include 'components/accordion.html' %}
+
+<!-- MOBILE-MENU (includes logo, nav-menu and mobile-menu, uncomment style and js) -->
+{% include 'components/mobile-menu.html' %}

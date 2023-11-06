@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* If you need to download some fonts - use this site: https://www.cufonfonts.com/ */
+@layer base {
+  // @include font-face('Montserrat', '../fonts/Montserrat-Thin', 100);
+  // @include font-face('Montserrat', '../fonts/Montserrat-ExtraLight', 200);
+  // @include font-face('Montserrat', '../fonts/Montserrat-Light', 300);
+  // @include font-face('Montserrat', '../fonts/Montserrat-Regular', 400);
+  // @include font-face('Montserrat', '../fonts/Montserrat-Medium', 500);
+  // @include font-face('Montserrat', '../fonts/Montserrat-SemiBold', 600);
+  // @include font-face('Montserrat', '../fonts/Montserrat-Bold', 700);
+  // @include font-face('Montserrat', '../fonts/Montserrat-ExtraBold', 800);
+  // @include font-face('Montserrat', '../fonts/Montserrat-Black', 900);
+}
+
+body {
+  @apply bg-body font-montserrat text-black-light;
+}
+
+.section {
+  @apply py-10 md:py-[60px] xl:py-20;
+}
+
+.btn {
+  @apply border border-black p-2 duration-300;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}

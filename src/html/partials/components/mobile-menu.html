@@ -1,0 +1,22 @@
+{% set component = components.navigation %}
+
+<div class="flex items-center justify-between">
+  <!-- LOGO -->
+  {% include 'components/logo.html' %}
+
+  <!-- NAV-MENU (desktop visible) -->
+  {% include 'components/nav-menu.html' %}
+
+  <!-- MOBILE-MENU BUTTON (notDesktop visible) -->
+  <button class="burger" type="button" aria-label="{{component.btnAria}}" data-open-menu-btn>
+    <span class="burger-bar"></span>
+    <span class="burger-bar"></span>
+    <span class="burger-bar"></span>
+  </button>
+</div>
+
+<!-- MOBILE-MENU CONTENT -->
+<div class="mobile-menu" data-menu>
+  {% include 'components/nav-menu.html' %}
+  <button class="btn" type="button" data-modal-open>Open modal</button>
+</div>

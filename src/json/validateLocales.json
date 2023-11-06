@@ -1,0 +1,167 @@
+[
+  {
+    "key": "Name is required",
+    "dict": {
+      "ru": "Имя обязательно",
+      "uk": "Ім’я обов’язкове",
+      "pl": "Imię jest wymagane",
+      "es": "El nombre es obligatorio",
+      "ro": "Numele este obligatoriu",
+      "en": "Name is required"
+    }
+  },
+  {
+    "key": "Name is invalid",
+    "dict": {
+      "ru": "Имя неверно",
+      "uk": "Ім’я невірне",
+      "pl": "Imię jest nieprawidłowe",
+      "es": "El nombre es inválido",
+      "ro": "Numele este invalid",
+      "en": "Name is invalid"
+    }
+  },
+  {
+    "key": "The field must contain a minimum of 2 characters",
+    "dict": {
+      "ru": "Поле должно содержать минимум 2 символа",
+      "uk": "Поле повинно містити мінімум 2 символи",
+      "pl": "Pole musi zawierać minimum 2 znaki",
+      "es": "El campo debe contener un mínimo de 2 caracteres",
+      "ro": "Câmpul trebuie să conțină un minim de 2 caractere",
+      "en": "The field must contain a minimum of 2 characters"
+    }
+  },
+  {
+    "key": "The field must contain a minimum of 3 characters",
+    "dict": {
+      "ru": "Поле должно содержать минимум 3 символа",
+      "uk": "Поле повинно містити мінімум 3 символи",
+      "pl": "Pole musi zawierać minimum 3 znaki",
+      "es": "El campo debe contener un mínimo de 3 caracteres",
+      "ro": "Câmpul trebuie să conțină un minim de 3 caractere",
+      "en": "The field must contain a minimum of 3 characters"
+    }
+  },
+  {
+    "key": "The field must contain a maximum of 30 characters",
+    "dict": {
+      "ru": "Поле должно содержать максимум 30 символов",
+      "uk": "Поле повинно містити максимум 30 символів",
+      "pl": "Pole musi zawierać maksymalnie 30 znaków",
+      "es": "El campo debe contener un máximo de 30 caracteres",
+      "ro": "Câmpul trebuie să conțină un maxim de 30 caractere",
+      "en": "The field must contain a maximum of 30 characters"
+    }
+  },
+  {
+    "key": "The field must contain a maximum of 100 characters",
+    "dict": {
+      "ru": "Поле должно содержать максимум 100 символов",
+      "uk": "Поле повинно містити максимум 100 символів",
+      "pl": "Pole musi zawierać maksymalnie 100 znaków",
+      "es": "El campo debe contener un máximo de 100 caracteres",
+      "ro": "Câmpul trebuie să conțină un maxim de 100 caractere",
+      "en": "The field must contain a maximum of 100 characters"
+    }
+  },
+  {
+    "key": "The field must contain a maximum of 500 characters",
+    "dict": {
+      "ru": "Поле должно содержать максимум 500 символов",
+      "uk": "Поле повинно містити максимум 500 символів",
+      "pl": "Pole musi zawierać maksymalnie 500 znaków",
+      "es": "El campo debe contener un máximo de 500 caracteres",
+      "ro": "Câmpul trebuie să conțină un maxim de 500 caractere",
+      "en": "The field must contain a maximum of 500 characters"
+    }
+  },
+  {
+    "key": "The field must contain a maximum of 1000 characters",
+    "dict": {
+      "ru": "Поле должно содержать максимум 1000 символов",
+      "uk": "Поле повинно містити максимум 1000 символів",
+      "pl": "Pole musi zawierać maksymalnie 1000 znaków",
+      "es": "El campo debe contener un máximo de 1000 caracteres",
+      "ro": "Câmpul trebuie să conțină un maxim de 1000 caractere",
+      "en": "The field must contain a maximum of 1000 characters"
+    }
+  },
+  {
+    "key": "Phone number is required",
+    "dict": {
+      "ru": "Номер телефона обязателен",
+      "uk": "Номер телефону обов’язковий",
+      "pl": "Numer telefonu jest wymagany",
+      "es": "El número de teléfono es obligatorio",
+      "ro": "Numărul de telefon este obligatoriu",
+      "en": "Phone number is required"
+    }
+  },
+  {
+    "key": "Phone number is invalid!",
+    "dict": {
+      "ru": "Номер телефона неверный!",
+      "uk": "Номер телефону невірний!",
+      "pl": "Numer telefonu jest nieprawidłowy!",
+      "es": "El número de teléfono es inválido!",
+      "ro": "Numărul de telefon este invalid!",
+      "en": "Phone number is invalid!"
+    }
+  },
+  {
+    "key": "Email is required",
+    "dict": {
+      "ru": "Email обязателен",
+      "uk": "Email обов’язковий",
+      "pl": "Email jest wymagany",
+      "es": "El correo electrónico es obligatorio",
+      "ro": "Emailul este obligatoriu",
+      "en": "Email is required"
+    }
+  },
+  {
+    "key": "Email is invalid!",
+    "dict": {
+      "ru": "Email неверный!",
+      "uk": "Email невірний!",
+      "pl": "Email jest nieprawidłowy!",
+      "es": "El correo electrónico es inválido!",
+      "ro": "Emailul este invalid!",
+      "en": "Email is invalid!"
+    }
+  },
+  {
+    "key": "The field is required",
+    "dict": {
+      "ru": "Обязательное поле",
+      "uk": "Обов’язкове поле",
+      "pl": "Pole jest wymagane",
+      "es": "Se requiere campo",
+      "ro": "Câmpul este obligatoriu",
+      "en": "The field is required"
+    }
+  },
+  {
+    "key": "The field must contain a minimum of 2 symbols",
+    "dict": {
+      "ru": "Поле должно содержать минимум 2 символа",
+      "uk": "Поле повинно містити мінімум 2 символи",
+      "pl": "Pole musi zawierać minimum 2 symbole",
+      "es": "El campo debe contener un mínimo de 2 símbolos",
+      "ro": "Câmpul trebuie să conțină un minim de 2 simboluri",
+      "en": "The field must contain a minimum of 2 symbols"
+    }
+  },
+  {
+    "key": "The field must contain a maximum of 20 symbols",
+    "dict": {
+      "ru": "Поле должно содержать максимум 20 символов",
+      "uk": "Поле повинно містити максимум 20 символів",
+      "pl": "Pole musi zawierać maksymalnie 20 symboli",
+      "es": "El campo debe contener un máximo de 20 símbolos",
+      "ro": "Câmpul trebuie să conțină un maxim de 20 simboluri",
+      "en": "The field must contain a maximum of 20 symbols"
+    }
+  }
+]

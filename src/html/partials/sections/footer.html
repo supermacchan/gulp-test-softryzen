@@ -1,0 +1,152 @@
+{% if page.lang === 'uk' and page.type === 'goiteens' %} {% set section = footer.goiteens %}
+<!--  -->
+{% elif page.lang === 'uk' and page.type === 'goit' %} {% set section = footer.uk %}
+<!--  -->
+{% elif page.lang === 'pl' and page.type === 'goit' %} {% set section = footer.pl %}
+<!--  -->
+{% elif page.lang === 'en' and page.type === 'goit' %} {% set section = footer.en %}
+<!--  -->
+{% elif page.lang === 'ro' and page.type === 'goit' %} {% set section = footer.ro %}
+<!--  -->
+{% elif page.lang === 'es' and page.type === 'goit' %} {% set section = footer.es %}
+<!--  -->
+{% endif %}
+
+<!-- ➡️ IF PAGE TYPE GOIT -->
+{% if page.type === 'goit' %}
+<footer class="bg-black py-8 text-white md:py-10">
+  <div class="container">
+    <div class="md:mb-7 md:flex md:items-start md:justify-between">
+      {% include 'components/logo.html' %}
+      <div class="flex items-start justify-between md:gap-x-[84px] xl:gap-x-[250px] smOnly:mb-6">
+        {% if section.address %}
+        <address
+          class="w-max text-[12px] font-medium not-italic leading-[2] tracking-[0.05em] sm:max-w-[120px] md:max-w-[165px] xl:max-w-[315px]"
+        >
+          {{section.address}}
+        </address>
+        {% endif %}
+        <ul class="w-max text-[12px] font-medium leading-[2] tracking-[0.05em]">
+          {% for contact in section.contacts %}
+          <li
+            class="w-max whitespace-nowrap duration-300 hover:text-accent focus:text-accent md:whitespace-normal"
+          >
+            <a class="block h-max w-max" href="{{contact.link}}">{{contact.text}}</a>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+      <div>
+        <a
+          class="mb-6 block w-max text-[12px] font-medium leading-[2] tracking-[0.095em] duration-300 hover:text-accent focus:text-accent md:mb-4 smOnly:mx-auto mdOnly:mx-0"
+          href="{{section.mail.link}}"
+          >{{section.mail.text}}</a
+        >
+        <ul class="flex w-max gap-[6px] smOnly:mx-auto smOnly:mb-7">
+          {% for social in section.socialLinks %}
+          <li>
+            <a
+              href="{{social.link}}"
+              aria-label="{{social.link_alt}}"
+              rel="noopener noreferrer nofollow"
+              target="_blank"
+            >
+              <svg
+                class="duration-300 hover:scale-125"
+                height="40"
+                width="40"
+                aria-label="{{social.alt}}"
+              >
+                <title>{{social.alt}}</title>
+                <use href="./assets/images/sprite.svg#{{social.svg}}"></use>
+              </svg>
+            </a>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+    <div class="md:flex md:flex-row-reverse md:items-end md:justify-between">
+      <ul class="md:flex md:gap-[25px] xl:gap-[64px]">
+        {% for agreement in section.agreementList %}
+        <li class="smOnly:mb-3 smOnly:last:mb-0">
+          <a
+            class="block w-max whitespace-nowrap text-center text-[10px] font-medium leading-[1.2] opacity-30 duration-300 hover:opacity-100 focus:opacity-100 md:whitespace-normal smOnly:mx-auto"
+            href="{{agreement.link}}"
+            rel="noopener noreferrer nofollow"
+            target="_blank"
+          >
+            {{agreement.text}}
+          </a>
+        </li>
+        {% endfor %}
+      </ul>
+      <p class="text-center text-[10px] font-medium leading-[1.2] opacity-30 smOnly:mt-6">
+        {{section.copyright.text}}
+        <span id="copyright">&copy; {{section.copyright.year}}</span>
+        <script>
+          document
+            .getElementById('copyright')
+            .insertAdjacentText('beforeend', new Date().getFullYear());
+        </script>
+      </p>
+    </div>
+  </div>
+</footer>
+
+<!-- ➡️ ELSE PAGE TYPE GOITEENS -->
+{% else %}
+<footer class="bg-black-light pb-[64px] pt-8 text-white md:py-10">
+  <div class="container justify-between md:flex">
+    <div class="grid items-center justify-center gap-[30px] smOnly:mb-[55px]">
+      {% include 'components/logo.html' %}
+      <ul class="grid grid-cols-4 gap-[30px]">
+        {% for social in section.socialLinks %}
+        <li>
+          <a
+            class="fill-white hover:fill-accent focus:fill-accent"
+            href="{{social.link}}"
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+            aria-label="{{social.link_alt}}"
+          >
+            <svg
+              class="fill-inherit duration-300 hover:scale-125"
+              width="32"
+              height="32"
+              aria-label="{{social.alt}}"
+            >
+              <title>{{social.alt}}</title>
+              <use href="./assets/images/sprite.svg#{{social.svg}}"></use>
+            </svg>
+          </a>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+    <div class="grid items-end justify-end text-center md:text-right">
+      <ul class="mb-7 flex justify-center gap-4 md:justify-end">
+        {% for payment in section.paymentList %}
+        <li>
+          <svg width="34" height="34" aria-label="{{payment.svgAlt}}">
+            <title>{{payment.svgAlt}}</title>
+            <use href="./assets/images/sprite.svg#{{payment.svg}}"></use>
+          </svg>
+        </li>
+        {% endfor %}
+      </ul>
+      <div class="md:flex md:gap-[14px] md:text-end xl:flex xl:gap-4 smOnly:text-center">
+        {% for agreement in section.agreementList %}
+        <a
+          class="block text-[16px] text-[#ABABAB] underline duration-300 hover:text-accent focus:text-accent"
+          href="{{agreement.link}}"
+          target="_blank"
+          rel="noopener noreferrer nofollow"
+          >{{agreement.text}}</a
+        >
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</footer>
+{% endif %}

@@ -1,0 +1,11 @@
+{
+  "name": "GoITeens",
+  "short_name": "GoITeens",
+  "icons": [
+    { "src": "goiteens-192.png", "type": "image/png", "sizes": "192x192" },
+    { "src": "goiteens-512.png", "type": "image/png", "sizes": "512x512" }
+  ],
+  "theme_color": "#FEC830",
+  "background_color": "#FEC830",
+  "display": "standalone"
+}

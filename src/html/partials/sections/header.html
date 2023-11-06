@@ -1,0 +1,38 @@
+{% set section = header %}
+
+<header class="{{section.id}}">
+  <div class="container">
+    <!-- Put your PNG or JPG images to src/assets/images/sections
+      and use ONLY WEBP images (generated automating) from src/assets/images/sections -->
+
+    <!-- Example -->
+    <picture>
+      <source
+        media="(min-width: 1280px)"
+        type="image/webp"
+        srcset="
+          ./assets/images/sections/{{section.id}}/desktop.webp    1x,
+          ./assets/images/sections/{{section.id}}/desktop@2x.webp 2x
+        "
+      />
+      <source
+        media="(min-width: 768px)"
+        type="image/webp"
+        srcset="
+          ./assets/images/sections/{{section.id}}/tablet.webp    1x,
+          ./assets/images/sections/{{section.id}}/tablet@2x.webp 2x
+        "
+      />
+      <img
+        class=""
+        width="320"
+        height="432"
+        loading="lazy"
+        alt="{{section.altImg}}"
+        src="./assets/images/sections/{{section.id}}/mobile.webp"
+        srcset="./assets/images/sections/{{section.id}}/mobile@2x.webp 2x"
+      />
+    </picture>
+  </div>
+</header>
+sw

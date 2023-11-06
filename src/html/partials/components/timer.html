@@ -1,0 +1,21 @@
+{% set component = components.timer %}
+<!--  -->
+{% if component.startDate.active === true %} {% set component = component.startDate %}
+<!--  -->
+{% elif component.fixedTime.active === true %} {% set component = component.fixedTime %}
+<!--  -->
+{% endif %}
+
+<div data-timer="{{component.count}}">
+  <p>{{component.text}}</p>
+  <ul class="flex gap-4">
+    {% for item in component.items %}
+    <li class="grid">
+      <span class="max-w-max" {{item.attribute}}>00</span>
+      <span>{{item.text}}</span>
+    </li>
+    {% if not loop.last %}
+    <li>:</li>
+    {% endif %} {% endfor %}
+  </ul>
+</div>

@@ -1,0 +1,96 @@
+@include mq(notDesktop) {
+  .nav {
+    @apply hidden;
+  }
+
+  .burger {
+    @apply xl:hidden;
+    cursor: pointer;
+    position: relative;
+    z-index: 50;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 20px;
+    transform: rotate(0deg);
+    transition: 0.5s ease-in-out;
+
+    &:hover .burger-bar,
+    &:focus .burger-bar {
+      @apply bg-accent;
+    }
+
+    & .burger-bar {
+      position: absolute;
+      left: 0;
+      display: block;
+      height: 3px;
+      width: 32px;
+      @apply bg-black-light;
+      border-radius: 5px;
+      opacity: 1;
+      transform: rotate(0deg);
+      transition: 0.25s ease-in-out;
+
+      &:nth-child(1) {
+        top: 0px;
+      }
+
+      &:nth-child(2) {
+        top: 8px;
+      }
+
+      &:nth-child(3) {
+        top: 16px;
+      }
+
+      &:not(:last-child) {
+        display: inline-block;
+      }
+    }
+  }
+
+  .is-active {
+    & .burger-bar:nth-child(1) {
+      top: 10px;
+      width: 30px;
+      transform: rotate(135deg);
+    }
+
+    & .burger-bar:nth-child(2) {
+      left: -20px;
+      width: 30px;
+      opacity: 0;
+    }
+
+    & .burger-bar:nth-child(3) {
+      top: 10px;
+      width: 30px;
+      transform: rotate(-135deg);
+    }
+  }
+
+  .mobile-menu {
+    @apply pointer-events-none fixed z-50 grid h-[100vh] w-[100vw] items-center justify-center bg-white;
+    transform: translateX(100%);
+    transition: transform 250ms;
+
+    &.is-open {
+      @apply pointer-events-auto;
+      transform: translateX(0);
+    }
+
+    & .nav {
+      @apply block;
+    }
+  }
+}
+
+@include mq(desktop) {
+  .burger,
+  .mobile-menu {
+    @apply hidden;
+  }
+}

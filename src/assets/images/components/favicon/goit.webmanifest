@@ -1,0 +1,11 @@
+{
+  "name": "GoIT",
+  "short_name": "GoIT",
+  "icons": [
+    { "src": "goit-192.png", "type": "image/png", "sizes": "192x192" },
+    { "src": "goit-512.png", "type": "image/png", "sizes": "512x512" }
+  ],
+  "theme_color": "#FF6C00",
+  "background_color": "#FF6C00",
+  "display": "standalone"
+}

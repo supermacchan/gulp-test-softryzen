@@ -1,0 +1,2 @@
+{% extends './form.html' %} {% block formFields %} {% import './macro/input.html' as fields %} {%
+for field in form.inputs %} {{ fields.inputField(field, formId) }} {% endfor %} {% endblock %}

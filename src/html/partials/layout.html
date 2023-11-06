@@ -1,0 +1,26 @@
+{% include 'params.html' %}
+
+<!doctype html>
+<html lang="{{ page.lang }}">
+  <head>
+    {% include 'head.html' %}
+  </head>
+
+  <body>
+    <div class="page">{% block content %} {% endblock %}</div>
+
+    {% include 'components/modal.html' %}{% include 'components/cookie-banner.html' %}
+    <script src="./assets/js/app.min.js"></script>
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id={% if page.type === 'goit' %}GTM-TQF6X5Z{% else %}GTM-WN9FX79{% endif %}"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+  </body>
+</html>

@@ -1,0 +1,20 @@
+.backdrop {
+  @apply visible fixed inset-0 z-[100] flex overflow-auto opacity-100 duration-300 ease-linear;
+  background-color: rgba(0, 0, 0, 0.55);
+
+  &.is-hidden {
+    @apply pointer-events-none invisible opacity-0;
+  }
+}
+
+.modal-close-btn {
+  @apply absolute right-6 top-5 grid h-6 w-6 place-items-center rounded-full fill-black-light p-0 duration-300 ease-linear hover:fill-accent focus:fill-accent md:right-10 md:top-10;
+}
+
+.modal {
+  @apply m-auto flex w-full max-w-[336px] translate-x-0 translate-y-0 flex-col justify-evenly rounded-xl px-3 py-8 opacity-100 duration-300 ease-linear md:max-w-[456px] md:p-10;
+
+  .is-hidden & {
+    @apply opacity-0 duration-300 ease-linear;
+  }
+}
