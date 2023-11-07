@@ -505,6 +505,7 @@
       "accentText": "Webflow",
       "afterText": "”"
     },
+    "altImg": "Подарунок",
     "steps": ["1", "2", "3"],
     "inputs": [
       {
@@ -536,9 +537,7 @@
   },
   "hero": {
     "id": "hero",
-    "formClass": "hero__form",
-    "formTitleClass": "hero__form-title",
-    "formBonusClass": "hero__form-bonus",
+    "altImg": "Ноутбуки",
     "content": {
       "preTitle": "для новачків в IT, які хочуть стати розробниками без знань коду",
       "title": {

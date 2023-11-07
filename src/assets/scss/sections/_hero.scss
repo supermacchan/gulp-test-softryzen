@@ -1,5 +1,35 @@
 .hero {
-  @apply pt-3 pb-[60px] bg-white-light text-black-primary
+  @apply pt-3 pb-[60px] relative bg-white-light text-black-primary md:pt-5 md:pb-[84px] xl:pt-0 xl:pb-[60px]
+}
+
+.hero::before {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
+  content: '';
+
+  width: 503px;
+  height: 424px;
+
+  position: absolute;
+  top: -102px;
+  right: 0;
+  z-index: 0;
+
+  background-image: image-set(url("/assets/images/sections/hero/hero-bg.webp") 1x,url("/assets/images/sections/hero/hero-bg@2x.webp") 2x);
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  @media screen and (min-width: 1280px) {
+    width: 751px;
+    height: 758px;
+
+    top: -105px;
+
+    background-image: image-set(url("/assets/images/sections/hero/hero-bg-xl.webp") 1x,url("/assets/images/sections/hero/hero-bg-xl@2x.webp") 2x);
+  }
 }
 
 .hero__container {
@@ -7,11 +37,11 @@
 }
 
 .hero__pre-title {
-  @apply mb-5 w-[221px] text-xs font-normal leading-4
+  @apply mb-5 w-[221px] text-xs font-normal leading-4 md:mt-10 md:mb-8 md:w-[285px] md:text-base md:leading-6 xl:mt-12 xl:w-auto
 }
 
 .hero__title {
-  @apply mb-5 font-bold text-[28px] leading-9
+  @apply mb-5 font-bold text-[28px] leading-9 md:mb-8 md:text-4xl md:leading-[44px] xl:w-[642px] xl:text-[60px] xl:leading-[72px]
 }
 
 .hero__title-accent {
@@ -19,15 +49,15 @@
 }
 
 .hero__description {
-  @apply mb-5 text-sm leading-5 font-normal
+  @apply mb-5 text-sm leading-5 font-normal md:mb-8 md:w-[336px] md:text-lg md:leading-7 xl:w-[507px]
 }
 
 .hero__start {
-  @apply px-4 py-1 text-white text-center text-xs font-semibold leading-5 bg-orange rounded-[20px]
+  @apply px-4 py-1 w-[148px] block text-white text-center text-xs font-semibold leading-5 bg-orange rounded-[20px] md:py-2 md:w-[166px] md:text-sm
 }
 
 .hero__form {
-  @apply bg-green shadow-turquoise
+  @apply mt-10 bg-green shadow-turquoise md:mt-0 xl:w-[416px]
 }
 
 .hero__form-title {
@@ -36,4 +66,12 @@
 
 .hero__form-bonus {
   @apply bg-white-light text-black-primary
+}
+
+.hero-img {
+  @apply smOnly:hidden mt-[67px] w-[336px] h-[105px] xl:mt-7 xl:w-[560px] xl:h-[175px]
+}
+
+.hero__form-input {
+  @apply border-white placeholder:text-green-placeholder text-white
 }

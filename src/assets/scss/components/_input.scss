@@ -23,10 +23,10 @@
 }
 
 .input-field {
-  @apply h-11 w-full rounded-lg border border-gray-400 bg-transparent px-4 py-2 text-[14px] font-medium leading-[1.2] md:text-[16px] md:leading-[1.25];
+  @apply h-11 w-full rounded-lg border border-gray-400 bg-transparent p-3 text-[14px] font-medium leading-[1.2] md:p-[10px] md:text-[16px] md:leading-[1.25];
 
   &::placeholder {
-    @apply text-gray-400;
+    @apply text-gray-400 text-sm leading-5;
   }
 
   &:focus {
@@ -38,9 +38,9 @@
   }
 }
 
-input[type='tel'].input-field {
-  @apply pl-14 pr-4;
-}
+// input[type='tel'].input-field {
+//   @apply pl-14 pr-4;
+// }
 
 .checkbox {
   @apply absolute left-0 top-0 inline-block h-6 w-6 rounded-full border border-gray-400 bg-contain bg-center bg-no-repeat;

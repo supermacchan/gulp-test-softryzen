@@ -52,7 +52,8 @@ module.exports = {
         second: '#f2f2f2',
         green: {
           DEFAULT: '#12A682',
-          light: '#D8F4F0'
+          light: '#D8F4F0',
+          placeholder: '#AEE7D9',
         },
         orange:  {
           DEFAULT: '#FF6B0A'

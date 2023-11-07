@@ -86,7 +86,7 @@
   <label class="input-label" for="{{ id }}_input_{{ arg.name }}">{{ arg.title }}</label>
   {% endif %}
   <input
-    class="input-field"
+    class="{{ id }}__form-input input-field"
     type="{{ arg.type }}"
     id="{{ id }}_input_{{ arg.name }}"
     name="{{ arg.name }}"

@@ -1,5 +1,5 @@
 .header {
-  @apply py-5 bg-white-light md:py-8
+  @apply py-5 bg-white-light md:py-8 xl:pt-10 xl:pb-6
 }
 
 .header__content {
@@ -11,5 +11,5 @@
 }
 
 .header__button {
-  @apply px-3 py-1 text-black-primary text-center text-xs font-semibold leading-4 bg-green-light border-green border rounded-[20px] md:py-2 md:text-sm md:leading-5
+  @apply px-3 py-1 text-black-primary text-center text-xs font-semibold leading-4 bg-green-light border-green border rounded-[20px] md:py-2 md:text-sm md:leading-5 md:relative md:z-10
 }
