@@ -1,0 +1,57 @@
+.about {
+  @apply py-10 text-black-primary md:py-[60px] xl:py-[80px]
+}
+
+.about__description {
+  @apply mb-8 text-base font-normal leading-6 md:mb-10 md:text-[20px] md:leading-7 xl:mb-[60px] xl:w-[665px]
+}
+
+.about__accent {
+  @apply p-5 pr-[28px] mx-auto w-[280px] h-[431px] relative text-base leading-6 font-medium text-white bg-green rounded-2xl md:p-10 md:pr-[271px] md:w-full md:h-auto xl:w-[1008px] xl:pr-[336px] xl:text-lg xl:leading-7
+}
+
+.about__accent::after {
+  content: '';
+
+  position: absolute;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media screen and (max-width: 767px) {
+    background-image: image-set(url("/assets/images/sections/about/no-code-sm.webp") 1x,url("/assets/images/sections/about/no-code-sm@2x.webp") 2x);
+    background-position: bottom;
+
+    width: 280px;
+    height: 183px;
+
+    bottom: 0;
+    left: 0;
+  }
+
+  @media screen and (min-width: 768px) {
+    background-image: image-set(url("/assets/images/sections/about/no-code-md.webp") 1x,url("/assets/images/sections/about/no-code-md@2x.webp") 2x);
+    background-position: left;
+
+    width: 304px;
+    height: 200px;
+
+    bottom: 0;
+    right: 0;
+
+    border-top-right-radius: 16px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    background-image: image-set(url("/assets/images/sections/about/no-code-xl.webp") 1x,url("/assets/images/sections/about/no-code-xl@2x.webp") 2x);
+    background-position: left;
+
+    width: 304px;
+    height: 192px;
+
+    bottom: 0;
+    right: 0;
+
+    border-top-right-radius: 16px;
+  }
+}

@@ -49,3 +49,7 @@ body {
 .container {
   @apply mx-auto px-5 max-w-[480px] md:px-8 md:max-w-[768px] xl:max-w-[1280px]
 }
+
+.section-title {
+  @apply text-2xl font-bold leading-8 md:text-[32px] md:leading-9 xl:text-[44px] xl:leading-[56px]
+}
