@@ -1,0 +1,19 @@
+.advantages {
+  @apply py-10 text-black-primary md:py-[60px] xl:py-[80px]
+}
+
+.advantages__list {
+  @apply mb-8 mx-auto flex flex-col gap-6 text-black-primary text-base font-bold leading-6 left-6 md:mb-10 md:flex-row md:flex-wrap md:gap-x-8 md:text-[18px] md:leading-7 xl:w-[1008px] xl:mb-[60px] xl:gap-y-10 xl:text-[20px]
+}
+
+.advantages__list-item {
+  @apply p-3 grid grid-flow-col gap-2 grid-cols-[48px_1fr] items-center rounded-[18px] bg-white-dark md:w-[336px] md:p-4 md:gap-4 md:grid-cols-[60px_1fr] xl:w-[488px] xl:gap-7 xl:grid-cols-[72px_1fr]
+}
+
+.advantages__icon {
+  @apply w-12 h-12 md:w-[60px] md:h-[60px] xl:w-[72px] xl:h-[72px]
+}
+
+.advantages__button {
+  @apply w-full rounded-2xl border-2 border-transparent bg-accent p-4 text-center font-bold text-[20px] leading-6 text-white outline-none duration-300 ease-linear hover:bg-black-primary focus:bg-black-primary md:mx-auto md:w-[328px]
+}

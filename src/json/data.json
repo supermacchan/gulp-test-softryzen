@@ -563,19 +563,23 @@
       "list": [
         {
           "text": "швидко перейти в IT-сферу",
-          "icon": "advantage-1"
+          "icon": "advantage-1",
+          "icon_aria": ""
         },
         {
           "text": "працювати за власним графіком та віддалено",
-          "icon": "advantage-2"
+          "icon": "advantage-2",
+          "icon_aria": ""
         },
         {
           "text": "отримувати заробітну плату в $$$",
-          "icon": "advantage-3"
+          "icon": "advantage-3",
+          "icon_aria": ""
         },
         {
           "text": "мати проєкти на фрілансі",
-          "icon": "advantage-4"
+          "icon": "advantage-4",
+          "icon_aria": ""
         }
       ],
       "button": "Зареєструватись"
