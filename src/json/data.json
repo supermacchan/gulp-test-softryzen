@@ -4,12 +4,13 @@
     "TYPE_EXAMPLE": "goit, goiteens",
     "type": "goit",
     "lang": "uk",
-    "title": "title",
-    "description": "description",
+    "title": "Створюй круті сайти на Webflow",
+    "description": "Безоплатний марафон від GoIT. За 4 дні створи власний сайт, не пишучи код, та переконайся, що стати айтівцем тобі під силу.",
     "canonical": "./"
   },
   "header": {
-    "id": "header"
+    "id": "header",
+    "button": "Безоплатний марафон"
   },
   "footer": {
     "uk": {
@@ -396,25 +397,25 @@
         ]
       },
       "startDate": {
-        "active": false,
+        "active": true,
         "count": "<?= $params['START_DATE'] ?>T<?= $params['START_TIME'] ?>:00+03:00",
         "text": "Some title",
         "items": [
           {
             "attribute": "data-day",
-            "text": "day"
+            "text": "днів"
           },
           {
             "attribute": "data-hours",
-            "text": "hours"
+            "text": "годин"
           },
           {
             "attribute": "data-min",
-            "text": "min"
+            "text": "хвилин"
           },
           {
             "attribute": "data-sec",
-            "text": "sec"
+            "text": "секунд"
           }
         ]
       }
@@ -497,13 +498,16 @@
   },
   "FORM_EXPAMPLE": "Переведенные формы лежат в allTranslatedForm.json",
   "form": {
-    "id": "modalForm",
-    "btnCloseAria": "кнопка закриття модального вікна",
-    "title": "Реєстрація",
+    "id": "registrationForm",
+    "title": "РЕЄСТРУЙСЯ НА МАРАФОН І ОТРИМАЙ БОНУС",
+    "bonus": {
+      "preText": "Конспект “Комбінації клавіш у ",
+      "accentText": "Webflow",
+      "afterText": "”"
+    },
     "steps": ["1", "2", "3"],
     "inputs": [
       {
-        "title": "Ім'я *",
         "type": "text",
         "name": "name",
         "placeholder": "Ім'я",
@@ -512,43 +516,37 @@
         "autocomplete": "name"
       },
       {
-        "title": "Телефон *",
-        "type": "tel",
-        "name": "phone",
-        "placeholder": "",
-        "dataField": "phone",
-        "required": true,
-        "autocomplete": "tel"
-      },
-      {
-        "title": "Пошта *",
         "type": "email",
         "name": "email",
-        "placeholder": "email@gmail.com",
+        "placeholder": "E-mail",
         "dataField": "email",
         "required": true,
         "autocomplete": "email"
       },
       {
-        "title": "Я погоджуюся на обробку моїх персональних даних у маркетингових і комерційних цілях відповідно до ",
-        "type": "checkbox",
-        "name": "agree",
-        "dataField": "checkbox",
+        "type": "tel",
+        "name": "phone",
+        "placeholder": "(063) 000-00-00",
+        "dataField": "phone",
         "required": true,
-        "class": "input-wrap-checkbox",
-        "linkSeparator": "та",
-        "links": [
-          {
-            "text": "Політики конфіденційності",
-            "href": "https://goit.global/ua/privacy-policy/"
-          },
-          {
-            "text": "Умов користування",
-            "href": "https://goit.global/ua/terms-of-use/"
-          }
-        ]
+        "autocomplete": "tel"
       }
     ],
-    "btnSubmit": "Зареєструватися"
+    "btnSubmit": "Зареєструватись"
+  },
+  "hero": {
+    "id": "hero",
+    "formClass": "hero__form",
+    "formTitleClass": "hero__form-title",
+    "formBonusClass": "hero__form-bonus",
+    "content": {
+      "preTitle": "для новачків в IT, які хочуть стати розробниками без знань коду",
+      "title": {
+        "main": "Створюй круті сайти на ",
+        "accent": "Webflow"
+      },
+      "description": "За 4 дні створи власний сайт, не пишучи код, та переконайся, що стати айтівцем тобі під силу",
+      "start": "Старт: 25 вересня"
+    }
   }
 }

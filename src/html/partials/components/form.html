@@ -1,5 +1,33 @@
-<form class="mt-6 text-lg" id="{{formId}}" novalidate autocomplete="on">
-  <div class="flex flex-wrap gap-6">{% block formFields %} {% endblock %}</div>
+{% set formId = section.id %}
+
+{% set formClass = section.formClass %}
+{% set titleClass = section.formTitleClass %}
+{% set bonusClass = section.formBonusClass %}
+
+<form
+  class="{{formClass}} form"
+  id="{{formId}}"
+  novalidate
+  autocomplete="on"
+>
+  <img
+    class="form-img"
+    width="95"
+    height="100"
+    alt="{{section.altImg}}"
+    src="./assets/images/sections/form/present.webp"
+    srcset="./assets/images/sections/form/present@2x.webp 2x"
+  />
+  <h2 class="{{titleClass}} form-title">
+    {{ form.title }}
+  </h2>
+  <p class="{{bonusClass}} form-bonus">
+    {{ form.bonus.preText }}<span class="form-accent">{{ form.bonus.accentText }}</span>{{ form.bonus.afterText }}
+  </p>
+  {% include 'components/timer.html' %}
+  <div class="flex flex-wrap gap-6">
+    {% block formFields %}{% endblock %}
+  </div>
   <button
     class="form-btn text-[16px] leading-[1.5] disabled:border-none disabled:bg-gray-200 disabled:hover:text-white md:text-[20px] md:leading-[1.2]"
     type="submit"

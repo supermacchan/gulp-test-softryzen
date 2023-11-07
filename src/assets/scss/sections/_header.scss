@@ -1,2 +1,15 @@
 .header {
+  @apply py-5 bg-white-light md:py-8
+}
+
+.header__content {
+  @apply flex justify-between items-center md:justify-start md:gap-8 xl:gap-10
+}
+
+.header__logo {
+  @apply w-[80px] h-[24px] fill-black-primary md:w-[120px] md:h-[36px]
+}
+
+.header__button {
+  @apply px-3 py-1 text-black-primary text-center text-xs font-semibold leading-4 bg-green-light border-green border rounded-[20px] md:py-2 md:text-sm md:leading-5
 }

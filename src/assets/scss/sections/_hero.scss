@@ -1,0 +1,39 @@
+.hero {
+  @apply pt-3 pb-[60px] bg-white-light text-black-primary
+}
+
+.hero__container {
+  @apply mx-auto p-5 max-w-[480px] md:p-8 md:max-w-[768px] xl:max-w-[1280px]
+}
+
+.hero__pre-title {
+  @apply mb-5 w-[221px] text-xs font-normal leading-4
+}
+
+.hero__title {
+  @apply mb-5 font-bold text-[28px] leading-9
+}
+
+.hero__title-accent {
+  @apply font-lato italic text-green
+}
+
+.hero__description {
+  @apply mb-5 text-sm leading-5 font-normal
+}
+
+.hero__start {
+  @apply px-4 py-1 text-white text-center text-xs font-semibold leading-5 bg-orange rounded-[20px]
+}
+
+.hero__form {
+  @apply bg-green shadow-turquoise
+}
+
+.hero__form-title {
+  @apply text-white
+}
+
+.hero__form-bonus {
+  @apply bg-white-light text-black-primary
+}

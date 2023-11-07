@@ -16,12 +16,14 @@ module.exports = {
     // BASE FONT
     fontFamily: {
       montserrat: ['Montserrat', 'sans-serif'], // class="font-montserrat"
+      lato: ['Lato', 'sans-serif']
       // gotham: ['Gotham', 'sans-serif'], // class="font-gotham" (goiteens)
       // exo: ['"Exo 2"', 'sans-serif'],
     },
     // SHADOW
     boxShadow: {
       orange: '2px 8px 29px rgba(240, 127, 46, 0.2)', // class="shadow-orange"
+      turquoise: '0px 2px 14px 0px rgba(50, 190, 203, 0.30)'
     },
     // THEME
     extend: {
@@ -38,14 +40,23 @@ module.exports = {
           DEFAULT: '#000000', // class="bg-black text-black border-black"
           light: '#202020', // class="bg-black-light text-black-light border-black-light"
           dark: '#010101', // class="bg-black-dark text-black-dark border-black-dark"
+          primary: '#151E34'
         },
         white: {
           DEFAULT: '#ffffff', // class="bg-white text-white border-white"
           dark: '#fafafa', // class="bg-white-dark text-white-dark border-white-dark"
+          light: '#EDFCFC',
         },
         accent: '#FF6C00', // class="bg-accent text-accent border-accent"
         primary: '#f1f1f1',
         second: '#f2f2f2',
+        green: {
+          DEFAULT: '#12A682',
+          light: '#D8F4F0'
+        },
+        orange:  {
+          DEFAULT: '#FF6B0A'
+        }
       },
       // CONTAINER
       container: {

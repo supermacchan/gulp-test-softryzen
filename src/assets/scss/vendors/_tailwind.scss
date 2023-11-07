@@ -4,15 +4,24 @@
 
 /* If you need to download some fonts - use this site: https://www.cufonfonts.com/ */
 @layer base {
-  // @include font-face('Montserrat', '../fonts/Montserrat-Thin', 100);
-  // @include font-face('Montserrat', '../fonts/Montserrat-ExtraLight', 200);
-  // @include font-face('Montserrat', '../fonts/Montserrat-Light', 300);
-  // @include font-face('Montserrat', '../fonts/Montserrat-Regular', 400);
-  // @include font-face('Montserrat', '../fonts/Montserrat-Medium', 500);
-  // @include font-face('Montserrat', '../fonts/Montserrat-SemiBold', 600);
-  // @include font-face('Montserrat', '../fonts/Montserrat-Bold', 700);
-  // @include font-face('Montserrat', '../fonts/Montserrat-ExtraBold', 800);
-  // @include font-face('Montserrat', '../fonts/Montserrat-Black', 900);
+  @include font-face('Montserrat', '../fonts/Montserrat-Thin', 100);
+  @include font-face('Montserrat', '../fonts/Montserrat-ExtraLight', 200);
+  @include font-face('Montserrat', '../fonts/Montserrat-Light', 300);
+  @include font-face('Montserrat', '../fonts/Montserrat-Regular', 400);
+  @include font-face('Montserrat', '../fonts/Montserrat-Medium', 500);
+  @include font-face('Montserrat', '../fonts/Montserrat-SemiBold', 600);
+  @include font-face('Montserrat', '../fonts/Montserrat-Bold', 700);
+  @include font-face('Montserrat', '../fonts/Montserrat-ExtraBold', 800);
+  @include font-face('Montserrat', '../fonts/Montserrat-Black', 900);
+  @include font-face('Lato', '../fonts/Lato-Thin', 100);
+  @include font-face('Lato', '../fonts/Lato-ThinItalic', 100);
+  @include font-face('Lato', '../fonts/Lato-Light', 300);
+  @include font-face('Lato', '../fonts/Lato-LightItalic', 300);
+  @include font-face('Lato', '../fonts/Lato-Regular', 400);
+  @include font-face('Lato', '../fonts/Lato-Bold', 700);
+  @include font-face('Lato', '../fonts/Lato-BoldItalic', 700);
+  @include font-face('Lato', '../fonts/Lato-Black', 900);
+  @include font-face('Lato', '../fonts/Lato-BlackItalic', 900);
 }
 
 body {
@@ -35,4 +44,8 @@ body {
   height: 1px !important;
   width: 1px !important;
   overflow: hidden;
+}
+
+.container {
+  @apply mx-auto px-5 max-w-[480px] md:px-8 md:max-w-[768px] xl:max-w-[1280px]
 }

@@ -1,0 +1,22 @@
+{% set section = hero %}
+
+<section class="{{section.id}}">
+  <div class="container">
+    <p class="hero__pre-title">
+      {{ section.content.preTitle }}
+    </p>
+    <h1 class="hero__title">
+      {{ section.content.title.main }}
+      <span class="hero__title-accent">
+        {{ section.content.title.accent }}
+      </span>
+    </h1>
+    <p class="hero__description">
+      {{ section.content.description }}
+    </p>
+    <span class="hero__start">
+      {{ section.content.start }}
+    </span>
+    {% include 'components/formFields.njk' %}
+  </div>
+</section>

@@ -79,8 +79,11 @@ $(window).on('load', async function () {
     radio: false,
     forms: [
       {
-        formId: 'modalForm',
+        formId: 'registrationForm',
       },
+      // {
+      //   formId: 'modalForm',
+      // },
       // {
       // formId: 'yourFormId',
       // productName: 'yourProductName',

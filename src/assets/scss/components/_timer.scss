@@ -1,0 +1,11 @@
+.timer {
+  @apply mb-5 px-[34px] py-3 bg-white bg-opacity-50 rounded-2xl text-black-primary
+}
+
+.time-text {
+  @apply text-[8px] text-center font-semibold leading-normal
+}
+
+.time-counter {
+  @apply text-[20px] font-bold leading-normal
+}
