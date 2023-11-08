@@ -17,11 +17,10 @@
       </svg>
     </button>
 
-    <h2 class="mb-9 text-[20px] font-bold leading-[1.2] md:mb-9 md:text-[24px]">
+    <!-- <h2 class="mb-9 text-[20px] font-bold leading-[1.2] md:mb-9 md:text-[24px]">
       {{ form.title }}
-    </h2>
+    </h2> -->
 
-    {% import './macro/step.html' as service %} {{service.stepDiv(form.steps, formId)}} {% include
-    './formFields.njk' %}
+    {% include './formFields.njk' %}
   </div>
 </div>

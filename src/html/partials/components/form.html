@@ -1,3 +1,4 @@
+{% set form = form %}
 {% set formId = section.id %}
 
 <form
@@ -7,10 +8,10 @@
   autocomplete="on"
 >
   <img
-    class="form-img"
+    class="form-img {{formId}}__image"
     width="95"
     height="100"
-    alt="{{section.altImg}}"
+    alt="{{form.altImg}}"
     src="./assets/images/sections/form/present.webp"
     srcset="./assets/images/sections/form/present@2x.webp 2x"
   />

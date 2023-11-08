@@ -18,3 +18,25 @@
     @apply opacity-0 duration-300 ease-linear;
   }
 }
+
+// form styles
+
+.registrationForm__form {
+  @apply bg-transparent mt-8 p-0 md:mt-10
+}
+
+.registrationForm__image {
+  @apply hidden
+}
+
+.registrationForm__form-title {
+  @apply px-1 text-base font-bold leading-[1.2] md:text-lg xl:mx-auto xl:text-[18px]
+}
+
+.registrationForm__form-bonus {
+  @apply bg-green text-white -mx-3 px-[60px] md:-mx-10
+}
+
+.registrationForm__form-input {
+  @apply border-white-border bg-white placeholder:text-black-placeholder text-black-primary
+}
