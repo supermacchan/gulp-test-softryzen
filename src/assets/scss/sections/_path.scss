@@ -2,10 +2,42 @@
   @apply py-10 text-black-primary md:py-[60px] xl:py-[80px]
 }
 
-.path__bullet {
+// .path__bullet {
+//   @apply w-10 h-10 flex justify-center items-center text-[15px] font-bold leading-normal bg-white-light rounded-[50%] transition-all duration-300
+// }
+
+// .path__bullet-active {
+//   @apply bg-green text-white
+// }
+
+.slick-dots {
+  @apply mx-auto flex gap-2
+}
+
+.slick-dots > * {
   @apply w-10 h-10 flex justify-center items-center text-[15px] font-bold leading-normal bg-white-light rounded-[50%] transition-all duration-300
 }
 
-.path__bullet-active {
-  @apply bg-green text-white
+.slick-dots > .slick-active {
+  @apply bg-green text-white cursor-pointer
+}
+
+.slick-dots button {
+  @apply outline-none
+}
+
+.slick-dotted {
+  @apply flex flex-col
+}
+
+.slick-track {
+  @apply flex overflow-x-hidden
+}
+
+.slick-track > .slick-slide {
+  @apply invisible opacity-0 transition-all duration-300
+}
+
+.slick-track > .slick-slide.slick-active {
+  @apply visible opacity-100
 }

@@ -77,3 +77,7 @@
     background-image: image-set(url("/assets/images/sections/path/path-bg-xl.webp") 1x,url("/assets/images/sections/path/path-bg-xl@2x.webp") 2x);
   }
 }
+
+.slick-slide .path-slide {
+  @apply md:!flex;
+}
