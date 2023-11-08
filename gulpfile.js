@@ -1,10 +1,12 @@
 'use strict';
 
+const gulp = require('gulp');
 const { series, parallel, watch } = require('gulp');
 const requireDir = require('require-dir');
 const browserSync = require('browser-sync').create();
 const tasks = requireDir('./gulp/tasks', { recurse: true });
 const paths = require('./gulp/paths');
+const ghPages = require('gulp-gh-pages');
 
 const serve = () => {
   return browserSync.init({
@@ -74,3 +76,8 @@ exports.build = series(
     // tasks.phpmailer
   )
 );
+
+gulp.task('deploy', function() {
+  return gulp.src('./build/**/*')
+    .pipe(ghPages());
+});
