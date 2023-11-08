@@ -5,19 +5,19 @@ import 'slick-carousel';
 
 $('.path__slider').slick({
   arrows: false, // Enable Next/Prev arrows
-  // autoplay: true, // Enables auto play of slides
+  autoplay: true, // Enables auto play of slides
   autoplaySpeed: 3000, // Auto play change interval
   // centerMode: false, // Enables centered view with partial prev/next slides. Use with odd numbered slidesToShow counts.
   adaptiveHeight: true,
   dots: true, // Current slide indicator dots
   // focusOnChange: false, // Puts focus on slide after change
   // focusOnSelect: false, // Enable focus on selected element (click)
-  // infinite: true, // Infinite looping
+  infinite: true, // Infinite looping
   // lazyLoad: 'ondemand', // Accepts 'ondemand' or 'progressive' for lazy load technique. 'ondemand' will load the image as soon as you slide to it, 'progressive' loads one image after the other when the page loads.
-  // pauseOnHover: true, // Pauses autoplay on hover
+  pauseOnHover: true, // Pauses autoplay on hover
   slidesToScroll: 1, // # of slides to scroll at a time
   slidesToShow: 1, // # of slides to show at a time
-  // speed: 300, // Transition speed
+  speed: 500, // Transition speed
   // vertical: false, // Vertical slide direction
   cssEase: 'ease-out', // CSS3 easing
   mobileFirst: true, // Responsive settings use mobile first calculation
