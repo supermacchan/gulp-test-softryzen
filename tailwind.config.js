@@ -41,7 +41,8 @@ module.exports = {
           light: '#202020', // class="bg-black-light text-black-light border-black-light"
           dark: '#010101', // class="bg-black-dark text-black-dark border-black-dark"
           primary: '#151E34',
-          placeholder: '#AFB2B2'
+          placeholder: '#AFB2B2',
+          border: 'rgba(21, 30, 52, 0.30)'
         },
         white: {
           DEFAULT: '#ffffff', // class="bg-white text-white border-white"

@@ -1,0 +1,24 @@
+<li class="path-slide path-slide__bg">
+  <div class="mt-[-10px]">
+    <div class="mb-[14px] md:mb-[27px] xl:mb-10 xl:ml-10">
+      <span class="path-slide__num">{{ item.id }}</span>
+      <span class="path-slide__day">{{ item.day }}</span>
+    </div>
+    <h3 class="path-slide__task">{{ item.task }}</h3>
+    <div class="path-slide__details">
+      <p class="path-slide__subtitle">{{ item.subtitle }}</p>
+      <span class="path-slide__text">{{ item.result.preText }}</span>
+      <span class="path-slide__accent">{{ item.result.accent }}</span>
+      <span class="path-slide__text">{{ item.result.afterText }}</span>
+    </div>
+  </div>
+  <img
+    class="path-slide__image"
+    width="420"
+    height="343"
+    loading="lazy"
+    alt="{{item.altImg}}"
+    src="./assets/images/sections/path/{{item.image}}.webp"
+    srcset="./assets/images/sections/path/{{item.image}}@2x.webp 2x"
+  />
+</li>
