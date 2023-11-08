@@ -3083,7 +3083,7 @@ body {
   left: 50%;
   transform: translate(-45%, -50%);
   z-index: -1;
-  background-image: url("/assets/images/sprite.svg#slide-star");
+  background-image: url("../../images/sprite.svg#slide-star");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
