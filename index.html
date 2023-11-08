@@ -1,0 +1,1045 @@
+<?php if(true){$params_file="app/params.ini";}else{$params_file=$_SERVER["DOCUMENT_ROOT"]."ua/app/params.ini";}if(file_exists($params_file)){$params=parse_ini_file($params_file);}else{$params=[];} ?>
+
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0,shrink-to-fit=no" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="robots" content="index, follow" />
+<meta name="google" content="notranslate" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="theme-color" content="#ffffff" />
+<!-- Generated with https://metatags.io/ -->
+
+<!-- Primary Meta Tags -->
+<meta name="title" content="Створюй круті сайти на Webflow" />
+<meta name="description" content="Безоплатний марафон від GoIT. За 4 дні створи власний сайт, не пишучи код, та переконайся, що стати айтівцем тобі під силу." />
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website" />
+<meta property="og:url" content="./" />
+<meta property="og:title" content="Створюй круті сайти на Webflow" />
+<meta property="og:description" content="Безоплатний марафон від GoIT. За 4 дні створи власний сайт, не пишучи код, та переконайся, що стати айтівцем тобі під силу." />
+<meta property="og:image" content="./assets/images/components/ogp/fb.png" />
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:url" content="./" />
+<meta property="twitter:title" content="Створюй круті сайти на Webflow" />
+<meta property="twitter:description" content="Безоплатний марафон від GoIT. За 4 дні створи власний сайт, не пишучи код, та переконайся, що стати айтівцем тобі під силу." />
+<meta property="twitter:image" content="./assets/images/components/ogp/tw.png" />
+
+
+<title>Створюй круті сайти на Webflow</title>
+
+<link rel="canonical" href="./" />
+<link rel="stylesheet" href="./assets/css/style.css" />
+
+<link rel="apple-touch-icon" href="./assets/images/components/favicon/apple-touch-icon-goit.png" />
+<link rel="icon" href="./assets/images/components/favicon/goit.svg" type="image/svg+xml" />
+<link rel="manifest" href="./assets/images/components/favicon/goit.webmanifest" />
+
+
+
+<!-- Google Tag Manager -->
+<script>
+  (function (w, d, s, l, i) {
+    w[l] = w[l] || [];
+    w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
+    var f = d.getElementsByTagName(s)[0],
+      j = d.createElement(s),
+      dl = l != 'dataLayer' ? '&l=' + l : '';
+    j.async = true;
+    j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+    f.parentNode.insertBefore(j, f);
+  })(window, document, 'script', 'dataLayer', 'GTM-TQF6X5Z');
+</script>
+<!-- End Google Tag Manager -->
+
+<!-- PHP Vars -->
+<script>
+  window.locale = 'uk';
+  window.productName = '<?= $params['PRODUCT_NAME'] ?? NULL?>';
+  window.productId = '<?= $params['PRODUCT_ID'] ?? NULL?>';
+  window.leelooHash = '<?= $params['LEELOO_HASH'] ?? NULL ?>';
+  window.leelooHashTeen = '<?= $params['LEELOO_HASH_TEEN'] ?? NULL ?>';
+  window.leelooHashParent = '<?= $params['LEELOO_HASH_PARENT'] ?? NULL ?>';
+  window.elzaToken = '<?= $params['ELZA_TOKEN'] ?? NULL ?>';
+  window.leadFormat = '<?= $params['CAPI_LEAD_FORMAT'] ?? NULL ?>';
+</script>
+<!-- End PHP Vars -->
+
+  </head>
+
+  <body>
+    <div class="page"> 
+
+<header class="header">
+  <div class="container">
+    <div class="header__content">
+      
+
+<!-- ➡️ IF PAGE TYPE GOIT -->
+
+<!-- IF HEADER -->
+
+<a
+  class="block w-max duration-300 hover:scale-105 focus:scale-105"
+  href="./"
+  aria-label="Посилання на головну сторінку сайту"
+>
+  <svg class="header__logo" width="120" height="36" aria-label="Логотип сайту">
+    <title>Логотип сайту</title>
+    <use href="./assets/images/sprite.svg#logo"></use>
+  </svg>
+</a>
+<!-- ELSE FOOTER -->
+
+
+<!-- ➡️ ELSE PAGE TYPE GOITEENS -->
+
+
+      <a href="#join_section" class="header__button" data-smooth-scroll>Безоплатний марафон</a>
+    </div>
+  </div>
+</header>
+
+
+<main>
+  
+
+<section class="hero">
+  <div class="container md:flex md:gap-8 xl:gap-0 xl:justify-between">
+    <div>
+      <p class="hero__pre-title">
+        для новачків в IT, які хочуть стати розробниками без знань коду
+      </p>
+      <h1 class="hero__title">
+        Створюй круті сайти на 
+        <span class="hero__title-accent">
+          Webflow
+        </span>
+      </h1>
+      <p class="hero__description">
+        За 4 дні створи власний сайт, не пишучи код, та переконайся, що стати айтівцем тобі під силу
+      </p>
+      <span class="hero__start">
+        Старт: 25 вересня
+      </span>
+      <img
+        class="hero-img"
+        width="560"
+        height="175"
+        alt="Ноутбуки"
+        src="./assets/images/sections/hero/hero-image.webp"
+        srcset="./assets/images/sections/hero/hero-image@2x.webp 2x"
+      />
+    </div>
+    
+
+
+<form
+  class="form hero__form"
+  id="hero"
+  novalidate
+  autocomplete="on"
+>
+  <img
+    class="form-img hero__image"
+    width="95"
+    height="100"
+    alt="Подарунок"
+    src="./assets/images/sections/form/present.webp"
+    srcset="./assets/images/sections/form/present@2x.webp 2x"
+  />
+  <h2 class="form-title hero__form-title">
+    РЕЄСТРУЙСЯ НА МАРАФОН І ОТРИМАЙ БОНУС
+  </h2>
+  <p class="form-bonus hero__form-bonus">
+    Конспект “Комбінації клавіш у <span class="form-accent">Webflow</span>”
+  </p>
+  
+<!--  -->
+ 
+<!--  -->
+
+
+<div data-timer="<?= $params['START_DATE'] ?>T<?= $params['START_TIME'] ?>:00+03:00" class="timer">
+  <!-- <p>Some title</p> -->
+  <ul class="flex justify-center">
+    
+    <li class="grid text-center">
+      <span class="max-w-max time-counter px-2" data-day>00</span>
+      <span class="time-text">днів</span>
+    </li>
+    
+    <li class="time-counter">:</li>
+     
+    <li class="grid text-center">
+      <span class="max-w-max time-counter px-2" data-hours>00</span>
+      <span class="time-text">годин</span>
+    </li>
+    
+    <li class="time-counter">:</li>
+     
+    <li class="grid text-center">
+      <span class="max-w-max time-counter px-2" data-min>00</span>
+      <span class="time-text">хвилин</span>
+    </li>
+    
+    <li class="time-counter">:</li>
+     
+    <li class="grid text-center">
+      <span class="max-w-max time-counter px-2" data-sec>00</span>
+      <span class="time-text">секунд</span>
+    </li>
+     
+  </ul>
+</div>
+
+  <div class="flex flex-wrap gap-[18px]">
+       
+
+<div class="input-wrap ">
+  <!-- ➡️ IF select -->
+  
+  
+  <input
+    class="hero__form-input input-field"
+    type="text"
+    id="hero_input_name"
+    name="name"
+    data-field="name"
+    data-type="text"
+     required="" 
+    
+    
+     placeholder="Ім'я" 
+     autocomplete="name" 
+
+  />
+  
+</div>
+  
+
+<div class="input-wrap ">
+  <!-- ➡️ IF select -->
+  
+  
+  <input
+    class="hero__form-input input-field"
+    type="email"
+    id="hero_input_email"
+    name="email"
+    data-field="email"
+    data-type="email"
+     required="" 
+    
+    
+     placeholder="E-mail" 
+     autocomplete="email" 
+
+  />
+  
+</div>
+  
+
+<div class="input-wrap ">
+  <!-- ➡️ IF select -->
+  
+  
+  <input
+    class="hero__form-input input-field"
+    type="tel"
+    id="hero_input_phone"
+    name="phone"
+    data-field="phone"
+    data-type="tel"
+     required="" 
+    
+    
+     placeholder="(063) 000-00-00" 
+     autocomplete="tel" 
+
+  />
+  
+</div>
+  
+  </div>
+  <button
+    class="form-btn text-[20px] leading-[1.5] disabled:border-none disabled:bg-gray-200 disabled:hover:text-white md:leading-[1.2]"
+    type="submit"
+  >
+    Зареєструватись
+  </button>
+</form>
+  </div>
+</section>
+  
+
+<section class="about">
+  <div class="container">
+    <h2 class="section-title mb-6">
+      No-code-розробник
+    </h2>
+    <p class="about__description">
+      — це айтівець, який створює вебпрограми не через написання коду, а через платформи-конструктори, наприклад Webflow.
+    </p>
+    <p class="about__accent">
+      Ноу-код - один з найшвидших способів стати частиною IT-сфери. Розробники сайтів та програм потрібні усім, а можливість утримувати цілі команди має не кожен. Тому ноу-кодери стають все більш популярними.
+    </p>
+  </div>
+</section>
+  
+
+
+<section class="advantages">
+  <div class="container flex flex-col">
+    <h2 class="section-title mb-6 md:mb-10 xl:mb-[60px]">
+      No-code для тебе, якщо хочеш:
+    </h2>
+    <ul class="advantages__list">
+      
+      <li class="advantages__list-item">
+        <svg class="advantages__icon" width="72" height="72" aria-label="Значки CSS HTML">
+          <title>Значки CSS HTML</title>
+          <use href="./assets/images/sprite.svg#advantage-1"></use>
+        </svg>
+        <p>швидко перейти в IT-сферу</p>
+      </li>
+      
+      <li class="advantages__list-item">
+        <svg class="advantages__icon" width="72" height="72" aria-label="Значок ноутбука">
+          <title>Значок ноутбука</title>
+          <use href="./assets/images/sprite.svg#advantage-2"></use>
+        </svg>
+        <p>працювати за власним графіком та віддалено</p>
+      </li>
+      
+      <li class="advantages__list-item">
+        <svg class="advantages__icon" width="72" height="72" aria-label="Значок грошей">
+          <title>Значок грошей</title>
+          <use href="./assets/images/sprite.svg#advantage-3"></use>
+        </svg>
+        <p>отримувати заробітну плату в $$$</p>
+      </li>
+      
+      <li class="advantages__list-item">
+        <svg class="advantages__icon" width="72" height="72" aria-label="Значок зірочка">
+          <title>Значок зірочка</title>
+          <use href="./assets/images/sprite.svg#advantage-4"></use>
+        </svg>
+        <p>мати проєкти на фрілансі</p>
+      </li>
+      
+    </ul>
+    <button type="button" class="advantages__button" data-modal-open>Зареєструватись</button>
+  </div>
+</section>
+  
+
+
+
+<section class="path">
+  <div class="container flex flex-col overflow-x-hidden">
+    <h2 class="section-title mb-6 md:mb-10 xl:mb-20">
+      Ось шлях, який ти пройдеш за ці 4 дні
+    </h2>
+    <ul class="path__slider">
+      
+      <li class="path-slide path-slide__bg" style="display: block!important;">
+  <div class="mt-[-10px]">
+    <div class="mb-[14px] md:mb-[27px] xl:mb-10 xl:ml-10">
+      <span class="path-slide__num">1</span>
+      <span class="path-slide__day">День</span>
+    </div>
+    <h3 class="path-slide__task">Знайомимося з Webflow, створюємо першу секцію сайту про подорожі Україною</h3>
+    <div class="path-slide__details">
+      <p class="path-slide__subtitle">Результат</p>
+      <span class="path-slide__text">Тепер ти володієш Webflow. Твій перший сайт уже в роботі. Так тримати!</span>
+      <span class="path-slide__accent"></span>
+      <span class="path-slide__text"></span>
+    </div>
+  </div>
+  <img
+    class="path-slide__image"
+    width="420"
+    height="343"
+    loading="lazy"
+    alt="Ноутбук та код"
+    src="./assets/images/sections/path/slide-1.webp"
+    srcset="./assets/images/sections/path/slide-1@2x.webp 2x"
+  />
+</li>
+      
+      <li class="path-slide path-slide__bg" style="display: block!important;">
+  <div class="mt-[-10px]">
+    <div class="mb-[14px] md:mb-[27px] xl:mb-10 xl:ml-10">
+      <span class="path-slide__num">2</span>
+      <span class="path-slide__day">День</span>
+    </div>
+    <h3 class="path-slide__task">Створюємо другу секцію сайту: додаємо анімацію Lottie</h3>
+    <div class="path-slide__details">
+      <p class="path-slide__subtitle">Результат</p>
+      <span class="path-slide__text">Ти маєш уже не просто сайт, а </span>
+      <span class="path-slide__accent">інтерактивний сайт!</span>
+      <span class="path-slide__text"> Тепер знаєш, як додати анімацію.</span>
+    </div>
+  </div>
+  <img
+    class="path-slide__image"
+    width="420"
+    height="343"
+    loading="lazy"
+    alt="Ноутбук та код"
+    src="./assets/images/sections/path/slide-2.webp"
+    srcset="./assets/images/sections/path/slide-2@2x.webp 2x"
+  />
+</li>
+      
+      <li class="path-slide path-slide__bg" style="display: block!important;">
+  <div class="mt-[-10px]">
+    <div class="mb-[14px] md:mb-[27px] xl:mb-10 xl:ml-10">
+      <span class="path-slide__num">3</span>
+      <span class="path-slide__day">День</span>
+    </div>
+    <h3 class="path-slide__task">Закінчуємо розробку сайту: додаємо ефект паралаксу</h3>
+    <div class="path-slide__details">
+      <p class="path-slide__subtitle">Результат</p>
+      <span class="path-slide__text">Додаєш </span>
+      <span class="path-slide__accent">готовий сайт у портфоліо </span>
+      <span class="path-slide__text">і показуєш його друзям. Бо це справжній шедевр!</span>
+    </div>
+  </div>
+  <img
+    class="path-slide__image"
+    width="420"
+    height="343"
+    loading="lazy"
+    alt="Ноутбук та код"
+    src="./assets/images/sections/path/slide-3.webp"
+    srcset="./assets/images/sections/path/slide-3@2x.webp 2x"
+  />
+</li>
+      
+      <li class="path-slide path-slide__bg" style="display: block!important;">
+  <div class="mt-[-10px]">
+    <div class="mb-[14px] md:mb-[27px] xl:mb-10 xl:ml-10">
+      <span class="path-slide__num">4</span>
+      <span class="path-slide__day">День</span>
+    </div>
+    <h3 class="path-slide__task">Плануємо, як почати працювати розробником Webflow</h3>
+    <div class="path-slide__details">
+      <p class="path-slide__subtitle">Результат</p>
+      <span class="path-slide__text">Знаєш, як за </span>
+      <span class="path-slide__accent">3 місяці підкорити ринок no-code-розробки.</span>
+      <span class="path-slide__text"></span>
+    </div>
+  </div>
+  <img
+    class="path-slide__image"
+    width="420"
+    height="343"
+    loading="lazy"
+    alt="Ноутбук та код"
+    src="./assets/images/sections/path/slide-4.webp"
+    srcset="./assets/images/sections/path/slide-4@2x.webp 2x"
+  />
+</li>
+      
+    </ul>
+  </div>
+</section>
+  
+
+<section class="join join__bg" id="join_section">
+  <div class="container join__container">
+    <h2 class="section-title join__title">
+      Приєднуйся зараз і опануй нову IT-професію
+    </h2>
+    
+
+
+<form
+  class="form join__form"
+  id="join"
+  novalidate
+  autocomplete="on"
+>
+  <img
+    class="form-img join__image"
+    width="95"
+    height="100"
+    alt="Подарунок"
+    src="./assets/images/sections/form/present.webp"
+    srcset="./assets/images/sections/form/present@2x.webp 2x"
+  />
+  <h2 class="form-title join__form-title">
+    РЕЄСТРУЙСЯ НА МАРАФОН І ОТРИМАЙ БОНУС
+  </h2>
+  <p class="form-bonus join__form-bonus">
+    Конспект “Комбінації клавіш у <span class="form-accent">Webflow</span>”
+  </p>
+  
+<!--  -->
+ 
+<!--  -->
+
+
+<div data-timer="<?= $params['START_DATE'] ?>T<?= $params['START_TIME'] ?>:00+03:00" class="timer">
+  <!-- <p>Some title</p> -->
+  <ul class="flex justify-center">
+    
+    <li class="grid text-center">
+      <span class="max-w-max time-counter px-2" data-day>00</span>
+      <span class="time-text">днів</span>
+    </li>
+    
+    <li class="time-counter">:</li>
+     
+    <li class="grid text-center">
+      <span class="max-w-max time-counter px-2" data-hours>00</span>
+      <span class="time-text">годин</span>
+    </li>
+    
+    <li class="time-counter">:</li>
+     
+    <li class="grid text-center">
+      <span class="max-w-max time-counter px-2" data-min>00</span>
+      <span class="time-text">хвилин</span>
+    </li>
+    
+    <li class="time-counter">:</li>
+     
+    <li class="grid text-center">
+      <span class="max-w-max time-counter px-2" data-sec>00</span>
+      <span class="time-text">секунд</span>
+    </li>
+     
+  </ul>
+</div>
+
+  <div class="flex flex-wrap gap-[18px]">
+       
+
+<div class="input-wrap ">
+  <!-- ➡️ IF select -->
+  
+  
+  <input
+    class="join__form-input input-field"
+    type="text"
+    id="join_input_name"
+    name="name"
+    data-field="name"
+    data-type="text"
+     required="" 
+    
+    
+     placeholder="Ім'я" 
+     autocomplete="name" 
+
+  />
+  
+</div>
+  
+
+<div class="input-wrap ">
+  <!-- ➡️ IF select -->
+  
+  
+  <input
+    class="join__form-input input-field"
+    type="email"
+    id="join_input_email"
+    name="email"
+    data-field="email"
+    data-type="email"
+     required="" 
+    
+    
+     placeholder="E-mail" 
+     autocomplete="email" 
+
+  />
+  
+</div>
+  
+
+<div class="input-wrap ">
+  <!-- ➡️ IF select -->
+  
+  
+  <input
+    class="join__form-input input-field"
+    type="tel"
+    id="join_input_phone"
+    name="phone"
+    data-field="phone"
+    data-type="tel"
+     required="" 
+    
+    
+     placeholder="(063) 000-00-00" 
+     autocomplete="tel" 
+
+  />
+  
+</div>
+  
+  </div>
+  <button
+    class="form-btn text-[20px] leading-[1.5] disabled:border-none disabled:bg-gray-200 disabled:hover:text-white md:leading-[1.2]"
+    type="submit"
+  >
+    Зареєструватись
+  </button>
+</form>
+    <img
+        class="join__img"
+        width="468"
+        height="402"
+        loading="lazy"
+        alt="Хлопець за комп'ютером"
+        src="./assets/images/sections/join/programmer.webp"
+        srcset="./assets/images/sections/join/programmer@2x.webp 2x"
+      />
+  </div>
+</section>
+</main>
+
+ 
+<!--  -->
+
+
+<!-- ➡️ IF PAGE TYPE GOIT -->
+
+<footer class="bg-black py-8 text-white md:py-10">
+  <div class="container">
+    <div class="md:mb-7 md:flex md:items-start md:justify-between">
+      
+
+<!-- ➡️ IF PAGE TYPE GOIT -->
+
+<!-- IF HEADER -->
+
+<a
+  class="flex justify-center opacity-30 duration-300 hover:scale-105 hover:opacity-100 focus:scale-105 focus:opacity-100 smOnly:mb-8"
+  href="./"
+  aria-label="Посилання на головну сторінку сайту"
+>
+  <svg class="fill-white" width="100" height="30" aria-label="Логотип сайту">
+    <title>Логотип сайту</title>
+    <use href="./assets/images/sprite.svg#logo"></use>
+  </svg>
+</a>
+
+
+<!-- ➡️ ELSE PAGE TYPE GOITEENS -->
+
+
+      <div class="flex items-start justify-between md:gap-x-[84px] xl:gap-x-[250px] smOnly:mb-6">
+        
+        <address
+          class="w-max text-[12px] font-medium not-italic leading-[2] tracking-[0.05em] sm:max-w-[120px] md:max-w-[165px] xl:max-w-[315px]"
+        >
+          Ю. Іллєнка, 12 <br/>Київ, Україна
+        </address>
+        
+        <ul class="w-max text-[12px] font-medium leading-[2] tracking-[0.05em]">
+          
+          <li
+            class="w-max whitespace-nowrap duration-300 hover:text-accent focus:text-accent md:whitespace-normal"
+          >
+            <a class="block h-max w-max" href="tel:+380938327513">(093) 832 75 13</a>
+          </li>
+          
+          <li
+            class="w-max whitespace-nowrap duration-300 hover:text-accent focus:text-accent md:whitespace-normal"
+          >
+            <a class="block h-max w-max" href="tel:+380503661777">(050) 366 17 77</a>
+          </li>
+          
+          <li
+            class="w-max whitespace-nowrap duration-300 hover:text-accent focus:text-accent md:whitespace-normal"
+          >
+            <a class="block h-max w-max" href="tel:+380679146750">(067) 914 67 50</a>
+          </li>
+          
+        </ul>
+      </div>
+      <div>
+        <a
+          class="mb-6 block w-max text-[12px] font-medium leading-[2] tracking-[0.095em] duration-300 hover:text-accent focus:text-accent md:mb-4 smOnly:mx-auto mdOnly:mx-0"
+          href="mailto:info@goit.global"
+          >info@goit.global</a
+        >
+        <ul class="flex w-max gap-[6px] smOnly:mx-auto smOnly:mb-7">
+          
+          <li>
+            <a
+              href="https://www.facebook.com/goITclub/"
+              aria-label="Посилання на фейсбук"
+              rel="noopener noreferrer nofollow"
+              target="_blank"
+            >
+              <svg
+                class="duration-300 hover:scale-125"
+                height="40"
+                width="40"
+                aria-label="Логотип фейсбуку"
+              >
+                <title>Логотип фейсбуку</title>
+                <use href="./assets/images/sprite.svg#facebook"></use>
+              </svg>
+            </a>
+          </li>
+          
+          <li>
+            <a
+              href="https://www.instagram.com/goitclub/"
+              aria-label="Посилання на інстаграм"
+              rel="noopener noreferrer nofollow"
+              target="_blank"
+            >
+              <svg
+                class="duration-300 hover:scale-125"
+                height="40"
+                width="40"
+                aria-label="Логотип інстаграму"
+              >
+                <title>Логотип інстаграму</title>
+                <use href="./assets/images/sprite.svg#instagram"></use>
+              </svg>
+            </a>
+          </li>
+          
+          <li>
+            <a
+              href="https://www.linkedin.com/company/goit-start-your-career-in-it/"
+              aria-label="Посилання на лінкедин"
+              rel="noopener noreferrer nofollow"
+              target="_blank"
+            >
+              <svg
+                class="duration-300 hover:scale-125"
+                height="40"
+                width="40"
+                aria-label="Логотип лінкедин"
+              >
+                <title>Логотип лінкедин</title>
+                <use href="./assets/images/sprite.svg#linkedin"></use>
+              </svg>
+            </a>
+          </li>
+          
+          <li>
+            <a
+              href="https://t.me/junior_developer_ua"
+              aria-label="Посилання на телеграм"
+              rel="noopener noreferrer nofollow"
+              target="_blank"
+            >
+              <svg
+                class="duration-300 hover:scale-125"
+                height="40"
+                width="40"
+                aria-label="Логотип телеграму"
+              >
+                <title>Логотип телеграму</title>
+                <use href="./assets/images/sprite.svg#telegram"></use>
+              </svg>
+            </a>
+          </li>
+          
+          <li>
+            <a
+              href="https://www.youtube.com/@GoIT"
+              aria-label="Посилання на ютуб"
+              rel="noopener noreferrer nofollow"
+              target="_blank"
+            >
+              <svg
+                class="duration-300 hover:scale-125"
+                height="40"
+                width="40"
+                aria-label="Логотип ютубу"
+              >
+                <title>Логотип ютубу</title>
+                <use href="./assets/images/sprite.svg#youtube"></use>
+              </svg>
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+    <div class="md:flex md:flex-row-reverse md:items-end md:justify-between">
+      <ul class="md:flex md:gap-[25px] xl:gap-[64px]">
+        
+        <li class="smOnly:mb-3 smOnly:last:mb-0">
+          <a
+            class="block w-max whitespace-nowrap text-center text-[10px] font-medium leading-[1.2] opacity-30 duration-300 hover:opacity-100 focus:opacity-100 md:whitespace-normal smOnly:mx-auto"
+            href="https://goit.global/ua/terms-of-use/"
+            rel="noopener noreferrer nofollow"
+            target="_blank"
+          >
+            Умови користування послугами
+          </a>
+        </li>
+        
+        <li class="smOnly:mb-3 smOnly:last:mb-0">
+          <a
+            class="block w-max whitespace-nowrap text-center text-[10px] font-medium leading-[1.2] opacity-30 duration-300 hover:opacity-100 focus:opacity-100 md:whitespace-normal smOnly:mx-auto"
+            href="https://goit.global/ua/privacy-policy/"
+            rel="noopener noreferrer nofollow"
+            target="_blank"
+          >
+            Політика конфіденційності
+          </a>
+        </li>
+        
+        <li class="smOnly:mb-3 smOnly:last:mb-0">
+          <a
+            class="block w-max whitespace-nowrap text-center text-[10px] font-medium leading-[1.2] opacity-30 duration-300 hover:opacity-100 focus:opacity-100 md:whitespace-normal smOnly:mx-auto"
+            href="https://goit.global/ua/disclaimer/"
+            rel="noopener noreferrer nofollow"
+            target="_blank"
+          >
+            Відмова від відповідальності
+          </a>
+        </li>
+        
+      </ul>
+      <p class="text-center text-[10px] font-medium leading-[1.2] opacity-30 smOnly:mt-6">
+        GoIT
+        <span id="copyright">&copy; 2014 - </span>
+        <script>
+          document
+            .getElementById('copyright')
+            .insertAdjacentText('beforeend', new Date().getFullYear());
+        </script>
+      </p>
+    </div>
+  </div>
+</footer>
+
+<!-- ➡️ ELSE PAGE TYPE GOITEENS -->
+
+ </div>
+
+    
+<div class="backdrop is-hidden smOnly:px-5" data-modal>
+  <div class="modal bg-white text-black-light">
+    <button
+      class="modal-close-btn"
+      type="button"
+      data-modal-close
+      aria-label=""
+    >
+      <svg
+        class="modal-btn-close-svg md:h-8 md:w-8"
+        width="24"
+        height="24"
+        aria-label=""
+      >
+        <use href="./assets/images/sprite.svg#icon-close-menu"></use>
+      </svg>
+    </button>
+
+    <!-- <h2 class="mb-9 text-[20px] font-bold leading-[1.2] md:mb-9 md:text-[24px]">
+      РЕЄСТРУЙСЯ НА МАРАФОН І ОТРИМАЙ БОНУС
+    </h2> -->
+
+    
+
+
+<form
+  class="form registrationForm__form"
+  id="registrationForm"
+  novalidate
+  autocomplete="on"
+>
+  <img
+    class="form-img registrationForm__image"
+    width="95"
+    height="100"
+    alt="Подарунок"
+    src="./assets/images/sections/form/present.webp"
+    srcset="./assets/images/sections/form/present@2x.webp 2x"
+  />
+  <h2 class="form-title registrationForm__form-title">
+    РЕЄСТРУЙСЯ НА МАРАФОН І ОТРИМАЙ БОНУС
+  </h2>
+  <p class="form-bonus registrationForm__form-bonus">
+    Конспект “Комбінації клавіш у <span class="form-accent">Webflow</span>”
+  </p>
+  
+<!--  -->
+ 
+<!--  -->
+
+
+<div data-timer="<?= $params['START_DATE'] ?>T<?= $params['START_TIME'] ?>:00+03:00" class="timer">
+  <!-- <p>Some title</p> -->
+  <ul class="flex justify-center">
+    
+    <li class="grid text-center">
+      <span class="max-w-max time-counter px-2" data-day>00</span>
+      <span class="time-text">днів</span>
+    </li>
+    
+    <li class="time-counter">:</li>
+     
+    <li class="grid text-center">
+      <span class="max-w-max time-counter px-2" data-hours>00</span>
+      <span class="time-text">годин</span>
+    </li>
+    
+    <li class="time-counter">:</li>
+     
+    <li class="grid text-center">
+      <span class="max-w-max time-counter px-2" data-min>00</span>
+      <span class="time-text">хвилин</span>
+    </li>
+    
+    <li class="time-counter">:</li>
+     
+    <li class="grid text-center">
+      <span class="max-w-max time-counter px-2" data-sec>00</span>
+      <span class="time-text">секунд</span>
+    </li>
+     
+  </ul>
+</div>
+
+  <div class="flex flex-wrap gap-[18px]">
+       
+
+<div class="input-wrap ">
+  <!-- ➡️ IF select -->
+  
+  
+  <input
+    class="registrationForm__form-input input-field"
+    type="text"
+    id="registrationForm_input_name"
+    name="name"
+    data-field="name"
+    data-type="text"
+     required="" 
+    
+    
+     placeholder="Ім'я" 
+     autocomplete="name" 
+
+  />
+  
+</div>
+  
+
+<div class="input-wrap ">
+  <!-- ➡️ IF select -->
+  
+  
+  <input
+    class="registrationForm__form-input input-field"
+    type="email"
+    id="registrationForm_input_email"
+    name="email"
+    data-field="email"
+    data-type="email"
+     required="" 
+    
+    
+     placeholder="E-mail" 
+     autocomplete="email" 
+
+  />
+  
+</div>
+  
+
+<div class="input-wrap ">
+  <!-- ➡️ IF select -->
+  
+  
+  <input
+    class="registrationForm__form-input input-field"
+    type="tel"
+    id="registrationForm_input_phone"
+    name="phone"
+    data-field="phone"
+    data-type="tel"
+     required="" 
+    
+    
+     placeholder="(063) 000-00-00" 
+     autocomplete="tel" 
+
+  />
+  
+</div>
+  
+  </div>
+  <button
+    class="form-btn text-[20px] leading-[1.5] disabled:border-none disabled:bg-gray-200 disabled:hover:text-white md:leading-[1.2]"
+    type="submit"
+  >
+    Зареєструватись
+  </button>
+</form>
+  </div>
+</div>
+ 
+<!--  -->
+
+
+<div
+  class="backdrop-cookie-banner cookie-banner-is-hidden visible absolute bottom-0 left-0 right-0 top-0 z-[100] grid items-end justify-items-end bg-black/[.80] opacity-100 duration-300 ease-linear"
+  data-cookie-banner
+>
+  <div
+    class="cookie-banner mx-auto max-h-[288px] w-[97%] max-w-[380px] rounded-t-xl bg-white px-5 py-9 text-black opacity-100 duration-300 ease-linear md:max-h-[128px] md:max-w-[760px] xl:max-h-[96px] xl:max-w-[1280px] xl:px-8 xl:py-4"
+  >
+    <div class="grid items-center justify-center md:flex md:justify-between">
+      <h2 class="mb-10 text-base md:mb-0 md:block md:max-w-[512px] xl:max-w-none">
+        Ми використовуємо файли cookie, щоб покращити роботу сайту. Дізнайтеся більше в
+        <a
+          class="inline text-accent underline"
+          href="https://goit.global/ua/privacy-policy/"
+          target="_blank"
+          rel="noopener noreferrer nofollow"
+          >Політиці конфіденційності</a
+        >
+        та
+        <a
+          class="inline text-accent underline"
+          href="https://goit.global/ua/terms-of-use/"
+          target="_blank"
+          rel="noopener noreferrer nofollow"
+          >Умовах використання</a
+        >
+      </h2>
+      <button class="form-btn md:w-[205px]" type="button" data-accept-cookie-btn>
+        Приймаю
+      </button>
+    </div>
+  </div>
+</div>
+
+    <script src="./assets/js/app.min.js"></script>
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-TQF6X5Z"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+  </body>
+</html>
