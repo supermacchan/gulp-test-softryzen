@@ -8,7 +8,7 @@
     "build": "gulp build --production",
     "prettier": "npx prettier . --write",
     "htmlhint": "npx htmlhint \"**/*.html\"",
-    "deploy": "gulp deploy"
+    "deploy": "gulp build & gulp deploy"
   },
   "homepage": "",
   "repository": "https://github.com/supermacchan/gulp-test-softryzen",
