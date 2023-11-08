@@ -19,7 +19,7 @@
   background-size: cover;
 
   @media screen and (max-width: 767px) {
-    background-image: image-set(url(/assets/images/sections/about/no-code-sm.webp) 1x,url(/assets/images/sections/about/no-code-sm@2x.webp) 2x);
+    background-image: image-set(url(../../images/sections/about/no-code-sm.webp) 1x,url(../../images/sections/about/no-code-sm@2x.webp) 2x);
     background-position: bottom;
 
     width: 280px;
@@ -30,7 +30,7 @@
   }
 
   @media screen and (min-width: 768px) {
-    background-image: image-set(url(/assets/images/sections/about/no-code-md.webp) 1x,url(/assets/images/sections/about/no-code-md@2x.webp) 2x);
+    background-image: image-set(url(../../images/sections/about/no-code-md.webp) 1x,url(../../images/sections/about/no-code-md@2x.webp) 2x);
     background-position: left;
 
     width: 304px;
@@ -43,7 +43,7 @@
   }
 
   @media screen and (min-width: 1280px) {
-    background-image: image-set(url(/assets/images/sections/about/no-code-xl.webp) 1x,url(/assets/images/sections/about/no-code-xl@2x.webp) 2x);
+    background-image: image-set(url(../../images/sections/about/no-code-xl.webp) 1x,url(../../images/sections/about/no-code-xl@2x.webp) 2x);
     background-position: left;
 
     width: 304px;
