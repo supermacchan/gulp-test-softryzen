@@ -3326,8 +3326,8 @@ body {
   top: -102px;
   right: 0;
   z-index: 0;
-  background-image: -webkit-image-set(url(../../../assets/images/sections/hero/hero-bg.webp) 1x, url(../../../assets/images/sections/hero/hero-bg@2x.webp) 2x);
-  background-image: image-set(url(../../../assets/images/sections/hero/hero-bg.webp) 1x, url(../../../assets/images/sections/hero/hero-bg@2x.webp) 2x);
+  background-image: -webkit-image-set(url(./assets/images/sections/hero/hero-bg.webp) 1x, url(./assets/images/sections/hero/hero-bg@2x.webp) 2x);
+  background-image: image-set(url(./assets/images/sections/hero/hero-bg.webp) 1x, url(./assets/images/sections/hero/hero-bg@2x.webp) 2x);
   background-position: bottom right;
   background-repeat: no-repeat;
   background-size: contain;
@@ -3342,8 +3342,8 @@ body {
     width: 751px;
     height: 758px;
     top: -105px;
-    background-image: -webkit-image-set(url(../../../assets/images/sections/hero/hero-bg-xl.webp) 1x, url(../../../assets/images/sections/hero/hero-bg-xl@2x.webp) 2x);
-    background-image: image-set(url(../../../assets/images/sections/hero/hero-bg-xl.webp) 1x, url(../../../assets/images/sections/hero/hero-bg-xl@2x.webp) 2x);
+    background-image: -webkit-image-set(url(./assets/images/sections/hero/hero-bg-xl.webp) 1x, url(./assets/images/sections/hero/hero-bg-xl@2x.webp) 2x);
+    background-image: image-set(url(./assets/images/sections/hero/hero-bg-xl.webp) 1x, url(./assets/images/sections/hero/hero-bg-xl@2x.webp) 2x);
   }
 }
 .hero__container {
