@@ -79,5 +79,5 @@
 }
 
 .slick-slide .path-slide {
-  @apply md:!flex;
+  display: flex !important;
 }
