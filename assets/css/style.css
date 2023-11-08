@@ -3083,7 +3083,7 @@ body {
   left: 50%;
   transform: translate(-45%, -50%);
   z-index: -1;
-  background-image: url(/assets/images/sprite.svg#slide-star);
+  background-image: url(../../images/sprite.svg#slide-star);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -3202,23 +3202,23 @@ body {
   }
 }
 .path-slide__bg {
-  background-image: -webkit-image-set(url(/assets/images/sections/path/path-bg-sm.webp) 1x, url(/assets/images/sections/path/path-bg-sm@2x.webp) 2x);
-  background-image: image-set(url(/assets/images/sections/path/path-bg-sm.webp) 1x, url(/assets/images/sections/path/path-bg-sm@2x.webp) 2x);
+  background-image: -webkit-image-set(url(../../images/sections/path/path-bg-sm.webp) 1x, url(../../images/sections/path/path-bg-sm@2x.webp) 2x);
+  background-image: image-set(url(../../images/sections/path/path-bg-sm.webp) 1x, url(../../images/sections/path/path-bg-sm@2x.webp) 2x);
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: contain;
 }
 @media screen and (min-width: 768px) {
   .path-slide__bg {
-    background-image: -webkit-image-set(url(/assets/images/sections/path/path-bg-md.webp) 1x, url(/assets/images/sections/path/path-bg-md@2x.webp) 2x);
-    background-image: image-set(url(/assets/images/sections/path/path-bg-md.webp) 1x, url(/assets/images/sections/path/path-bg-md@2x.webp) 2x);
+    background-image: -webkit-image-set(url(../../images/sections/path/path-bg-md.webp) 1x, url(../../images/sections/path/path-bg-md@2x.webp) 2x);
+    background-image: image-set(url(../../images/sections/path/path-bg-md.webp) 1x, url(../../images/sections/path/path-bg-md@2x.webp) 2x);
     background-position: right;
   }
 }
 @media screen and (min-width: 1280px) {
   .path-slide__bg {
-    background-image: -webkit-image-set(url(/assets/images/sections/path/path-bg-xl.webp) 1x, url(/assets/images/sections/path/path-bg-xl@2x.webp) 2x);
-    background-image: image-set(url(/assets/images/sections/path/path-bg-xl.webp) 1x, url(/assets/images/sections/path/path-bg-xl@2x.webp) 2x);
+    background-image: -webkit-image-set(url(../../images/sections/path/path-bg-xl.webp) 1x, url(../../images/sections/path/path-bg-xl@2x.webp) 2x);
+    background-image: image-set(url(../../images/sections/path/path-bg-xl.webp) 1x, url(../../images/sections/path/path-bg-xl@2x.webp) 2x);
   }
 }
 .slick-slide .path-slide {
@@ -3326,8 +3326,8 @@ body {
   top: -102px;
   right: 0;
   z-index: 0;
-  background-image: -webkit-image-set(url(/assets/images/sections/hero/hero-bg.webp) 1x, url(/assets/images/sections/hero/hero-bg@2x.webp) 2x);
-  background-image: image-set(url(/assets/images/sections/hero/hero-bg.webp) 1x, url(/assets/images/sections/hero/hero-bg@2x.webp) 2x);
+  background-image: -webkit-image-set(url(../../images/sections/hero/hero-bg.webp) 1x, url(../../images/sections/hero/hero-bg@2x.webp) 2x);
+  background-image: image-set(url(../../images/sections/hero/hero-bg.webp) 1x, url(../../images/sections/hero/hero-bg@2x.webp) 2x);
   background-position: bottom right;
   background-repeat: no-repeat;
   background-size: contain;
@@ -3342,8 +3342,8 @@ body {
     width: 751px;
     height: 758px;
     top: -105px;
-    background-image: -webkit-image-set(url(/assets/images/sections/hero/hero-bg-xl.webp) 1x, url(/assets/images/sections/hero/hero-bg-xl@2x.webp) 2x);
-    background-image: image-set(url(/assets/images/sections/hero/hero-bg-xl.webp) 1x, url(/assets/images/sections/hero/hero-bg-xl@2x.webp) 2x);
+    background-image: -webkit-image-set(url(../../images/sections/hero/hero-bg-xl.webp) 1x, url(../../images/sections/hero/hero-bg-xl@2x.webp) 2x);
+    background-image: image-set(url(../../images/sections/hero/hero-bg-xl.webp) 1x, url(../../images/sections/hero/hero-bg-xl@2x.webp) 2x);
   }
 }
 .hero__container {
@@ -3594,8 +3594,8 @@ body {
 }
 @media screen and (max-width: 767px) {
   .about__accent::after {
-    background-image: -webkit-image-set(url(/assets/images/sections/about/no-code-sm.webp) 1x, url(/assets/images/sections/about/no-code-sm@2x.webp) 2x);
-    background-image: image-set(url(/assets/images/sections/about/no-code-sm.webp) 1x, url(/assets/images/sections/about/no-code-sm@2x.webp) 2x);
+    background-image: -webkit-image-set(url(../../images/sections/about/no-code-sm.webp) 1x, url(../../images/sections/about/no-code-sm@2x.webp) 2x);
+    background-image: image-set(url(../../images/sections/about/no-code-sm.webp) 1x, url(../../images/sections/about/no-code-sm@2x.webp) 2x);
     background-position: bottom;
     width: 280px;
     height: 183px;
@@ -3605,8 +3605,8 @@ body {
 }
 @media screen and (min-width: 768px) {
   .about__accent::after {
-    background-image: -webkit-image-set(url(/assets/images/sections/about/no-code-md.webp) 1x, url(/assets/images/sections/about/no-code-md@2x.webp) 2x);
-    background-image: image-set(url(/assets/images/sections/about/no-code-md.webp) 1x, url(/assets/images/sections/about/no-code-md@2x.webp) 2x);
+    background-image: -webkit-image-set(url(../../images/sections/about/no-code-md.webp) 1x, url(../../images/sections/about/no-code-md@2x.webp) 2x);
+    background-image: image-set(url(../../images/sections/about/no-code-md.webp) 1x, url(../../images/sections/about/no-code-md@2x.webp) 2x);
     background-position: left;
     width: 304px;
     height: 200px;
@@ -3617,8 +3617,8 @@ body {
 }
 @media screen and (min-width: 1280px) {
   .about__accent::after {
-    background-image: -webkit-image-set(url(/assets/images/sections/about/no-code-xl.webp) 1x, url(/assets/images/sections/about/no-code-xl@2x.webp) 2x);
-    background-image: image-set(url(/assets/images/sections/about/no-code-xl.webp) 1x, url(/assets/images/sections/about/no-code-xl@2x.webp) 2x);
+    background-image: -webkit-image-set(url(../../images/sections/about/no-code-xl.webp) 1x, url(../../images/sections/about/no-code-xl@2x.webp) 2x);
+    background-image: image-set(url(../../images/sections/about/no-code-xl.webp) 1x, url(../../images/sections/about/no-code-xl@2x.webp) 2x);
     background-position: left;
     width: 304px;
     height: 192px;
@@ -3927,24 +3927,24 @@ body {
   }
 }
 .join__bg {
-  background-image: -webkit-image-set(url(/assets/images/sections/join/join-bg-sm.webp) 1x, url(/assets/images/sections/join/join-bg-sm@2x.webp) 2x);
-  background-image: image-set(url(/assets/images/sections/join/join-bg-sm.webp) 1x, url(/assets/images/sections/join/join-bg-sm@2x.webp) 2x);
+  background-image: -webkit-image-set(url(../../images/sections/join/join-bg-sm.webp) 1x, url(../../images/sections/join/join-bg-sm@2x.webp) 2x);
+  background-image: image-set(url(../../images/sections/join/join-bg-sm.webp) 1x, url(../../images/sections/join/join-bg-sm@2x.webp) 2x);
   background-position: bottom -118px left 50%;
   background-repeat: no-repeat;
   background-size: contain;
 }
 @media screen and (min-width: 768px) {
   .join__bg {
-    background-image: -webkit-image-set(url(/assets/images/sections/join/join-bg-md.webp) 1x, url(/assets/images/sections/join/join-bg-md@2x.webp) 2x);
-    background-image: image-set(url(/assets/images/sections/join/join-bg-md.webp) 1x, url(/assets/images/sections/join/join-bg-md@2x.webp) 2x);
+    background-image: -webkit-image-set(url(../../images/sections/join/join-bg-md.webp) 1x, url(../../images/sections/join/join-bg-md@2x.webp) 2x);
+    background-image: image-set(url(../../images/sections/join/join-bg-md.webp) 1x, url(../../images/sections/join/join-bg-md@2x.webp) 2x);
     background-position: bottom -110px left 0;
     background-size: auto;
   }
 }
 @media screen and (min-width: 1280px) {
   .join__bg {
-    background-image: -webkit-image-set(url(/assets/images/sections/join/join-bg-xl.webp) 1x, url(/assets/images/sections/join/join-bg-xl@2x.webp) 2x);
-    background-image: image-set(url(/assets/images/sections/join/join-bg-xl.webp) 1x, url(/assets/images/sections/join/join-bg-xl@2x.webp) 2x);
+    background-image: -webkit-image-set(url(../../images/sections/join/join-bg-xl.webp) 1x, url(../../images/sections/join/join-bg-xl@2x.webp) 2x);
+    background-image: image-set(url(../../images/sections/join/join-bg-xl.webp) 1x, url(../../images/sections/join/join-bg-xl@2x.webp) 2x);
     background-position: bottom 0 left 0;
     background-size: auto;
   }
