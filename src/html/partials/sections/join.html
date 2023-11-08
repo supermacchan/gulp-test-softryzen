@@ -1,0 +1,19 @@
+{% set section = join %}
+
+<section class="{{section.id}} join__bg">
+  <div class="container join__container">
+    <h2 class="section-title join__title">
+      {{ section.content.title }}
+    </h2>
+    {% include 'components/formFields.njk' %}
+    <img
+        class="join__img"
+        width="468"
+        height="402"
+        loading="lazy"
+        alt="{{section.content.altImg}}"
+        src="./assets/images/sections/join/programmer.webp"
+        srcset="./assets/images/sections/join/programmer@2x.webp 2x"
+      />
+  </div>
+</section>

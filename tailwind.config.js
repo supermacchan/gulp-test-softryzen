@@ -40,12 +40,14 @@ module.exports = {
           DEFAULT: '#000000', // class="bg-black text-black border-black"
           light: '#202020', // class="bg-black-light text-black-light border-black-light"
           dark: '#010101', // class="bg-black-dark text-black-dark border-black-dark"
-          primary: '#151E34'
+          primary: '#151E34',
+          placeholder: '#AFB2B2'
         },
         white: {
           DEFAULT: '#ffffff', // class="bg-white text-white border-white"
           dark: '#fafafa', // class="bg-white-dark text-white-dark border-white-dark"
           light: '#EDFCFC',
+          border: "B2B9CB"
         },
         accent: '#FF6C00', // class="bg-accent text-accent border-accent"
         primary: '#f1f1f1',
@@ -53,6 +55,7 @@ module.exports = {
         green: {
           DEFAULT: '#12A682',
           light: '#D8F4F0',
+          timer: '#89D3C1',
           placeholder: '#AEE7D9',
         },
         orange:  {
