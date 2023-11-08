@@ -18,7 +18,7 @@
   transform: translate(-45%, -50%);
   z-index: -1;
 
-  background-image: url(../../images/sprite.svg#slide-star);
+  background-image: url(/assets/images/sprite.svg#slide-star);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -63,18 +63,18 @@
 }
 
 .path-slide__bg {
-  background-image: image-set(url(../../images/sections/path/path-bg-sm.webp) 1x,url(../../images/sections/path/path-bg-sm@2x.webp) 2x);
+  background-image: image-set(url(/assets/images/sections/path/path-bg-sm.webp) 1x,url(/assets/images/sections/path/path-bg-sm@2x.webp) 2x);
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: contain;
 
   @media screen and (min-width: 768px) {
-    background-image: image-set(url(../../images/sections/path/path-bg-md.webp) 1x,url(../../images/sections/path/path-bg-md@2x.webp) 2x);
+    background-image: image-set(url(/assets/images/sections/path/path-bg-md.webp) 1x,url(/assets/images/sections/path/path-bg-md@2x.webp) 2x);
     background-position: right;
   }
 
   @media screen and (min-width: 1280px) {
-    background-image: image-set(url(../../images/sections/path/path-bg-xl.webp) 1x,url(../../images/sections/path/path-bg-xl@2x.webp) 2x);
+    background-image: image-set(url(/assets/images/sections/path/path-bg-xl.webp) 1x,url(/assets/images/sections/path/path-bg-xl@2x.webp) 2x);
   }
 }
 
