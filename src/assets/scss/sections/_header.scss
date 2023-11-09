@@ -11,5 +11,5 @@
 }
 
 .header__button {
-  @apply px-3 py-1 text-black-primary text-center text-xs font-semibold leading-4 bg-green-light border-green border rounded-[20px] md:py-2 md:text-sm md:leading-5 md:relative md:z-10
+  @apply px-3 py-1 text-black-primary text-center text-xs font-semibold leading-4 bg-green-light border-green border rounded-[20px] md:py-2 md:text-sm md:leading-5 md:relative md:z-10 hover:border-black-primary focus:border-black-primary transition-all duration-300
 }

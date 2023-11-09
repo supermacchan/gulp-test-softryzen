@@ -31,19 +31,19 @@
 }
 
 .join__bg {
-  background-image: image-set(url(/assets/images/sections/join/join-bg-sm.webp) 1x,url(/assets/images/sections/join/join-bg-sm@2x.webp) 2x);
+  background-image: image-set(url(../images/sections/join/join-bg-sm.webp) 1x,url(../images/sections/join/join-bg-sm@2x.webp) 2x);
   background-position: bottom -118px left 50%;
   background-repeat: no-repeat;
   background-size: contain;
 
   @media screen and (min-width: 768px) {
-    background-image: image-set(url(/assets/images/sections/join/join-bg-md.webp) 1x,url(/assets/images/sections/join/join-bg-md@2x.webp) 2x);
+    background-image: image-set(url(../images/sections/join/join-bg-md.webp) 1x,url(../images/sections/join/join-bg-md@2x.webp) 2x);
     background-position: bottom -110px left 0;
     background-size: auto;
   }
 
   @media screen and (min-width: 1280px) {
-    background-image: image-set(url(/assets/images/sections/join/join-bg-xl.webp) 1x,url(/assets/images/sections/join/join-bg-xl@2x.webp) 2x);
+    background-image: image-set(url(../images/sections/join/join-bg-xl.webp) 1x,url(../images/sections/join/join-bg-xl@2x.webp) 2x);
     background-position: bottom 0 left 0;
     background-size: auto;
   }
